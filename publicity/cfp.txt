@@ -4,7 +4,7 @@
                           Call for Paper
 
             SILM Workshop on Software/Hardware Security
-                https://silm-workshop-2022.inria.fr/
+                 https://silm-workshop.github.io/
   Co-located with Euro S&P 2022: http://www.ieee-security.org/TC/EuroSP2022/
 
                          Monday, June 06, 2022
