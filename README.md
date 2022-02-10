@@ -48,9 +48,9 @@ that work on the security of software/hardware interfaces.
 
 ### Important Dates
 
-- Submission: March 22, 2022 -- 11:59pm AoE
+- Submission: March 04, 2022 -- 11:59pm AoE
 - Author Notification: April 08, 2022
-- Camera Ready Version: April 22, 2022
+- Camera Ready Version: April 15, 2022
 - Workshop: June 06, 2022
 
 ### Submission and Publication
@@ -60,6 +60,9 @@ There are two categories of submissions:
 1. Regular papers describing fully developed work and complete results (10 pages, references included, IEEE format)
 
 2. Short papers, position papers, industry experience reports, work-in-progress submissions and ideas (6 pages, references included, IEEE format; work-in-progress and idea submissions should clearly outline research hypothesis, evaluation strategy and potential impact)
+
+Submissions are accepted through EasyChair:
+[https://easychair.org/conferences/?conf=silm2022](https://easychair.org/conferences/?conf=silm2022)
 
 All papers should be in English and describe original work that has not
 been published or submitted elsewhere. The submission category should be
