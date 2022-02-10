@@ -48,7 +48,7 @@ that work on the security of software/hardware interfaces.
 
 ### Important Dates
 
-- Submission: March 202, 2022 -- 11:59pm AoE
+- Submission: March 22, 2022 -- 11:59pm AoE
 - Author Notification: April 08, 2022
 - Camera Ready Version: April 22, 2022
 - Workshop: June 06, 2022
@@ -75,9 +75,7 @@ not want your *short paper* to appear in the proceedings.
 
 ### Program Committee
 
-- Guillaume Bouffard, ANSSI
 - Pascal Cotret, ENSTA Bretagne
-- Damien Couroussé, CEA
 - Chris Dalton, HP Labs
 - Lesly-Ann Daniel, KU Leuven
 - Lucas Davi, University of Duisburg-Essen
