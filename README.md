@@ -32,7 +32,7 @@ The goal of this third edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
 that work on the security of software/hardware interfaces.
 
-### Topics of interest include, but are not limited to the following.
+**Topics of interest include, but are not limited to the following:**
 
 * Hardware reverse engineering
 * Microcode security analyses
