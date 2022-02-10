@@ -1,11 +1,11 @@
-## SILM Workshop on Software/Hardware Security
-                
-Monday, June 06, 2022
 
-Co-located with [Euro S&P 2022](http://www.ieee-security.org/TC/EuroSP2022/).
+### Call for Paper
 
+             SILM Workshop on Software/Hardware Security
+                https://silm-workshop-2022.inria.fr/
+  Co-located with Euro S&P 2022: http://www.ieee-security.org/TC/EuroSP2022/
 
-### Introduction & Scope
+                         Monday, June 06, 2022
 
 It is becoming increasingly important to combine software and hardware
 aspects in order to take into account new software attacks. For example,
