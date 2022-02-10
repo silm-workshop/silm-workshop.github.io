@@ -46,14 +46,14 @@ that work on the security of software/hardware interfaces.
 * Hardware trace mechanisms for security
 * OS and VM introspection
 
-### Important Deadlines:
+### Important Dates
 
 - Submission: March 202, 2022 -- 11:59pm AoE
 - Author Notification: April 08, 2022
 - Camera Ready Version: April 22, 2022
 - Workshop: June 06, 2022
 
-### Submission and publication
+### Submission and Publication
 
 There are two categories of submissions:
 

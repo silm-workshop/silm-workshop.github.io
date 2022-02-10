@@ -37,7 +37,7 @@ The goal of this third edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
 that work on the security of software/hardware interfaces.
 
-==== Topics of interest include, but are not limited to the following.
+==== Topics of interest include, but are not limited to the following
 
  * Hardware reverse engineering
  * Microcode security analyses
@@ -51,14 +51,14 @@ that work on the security of software/hardware interfaces.
  * Hardware trace mechanisms for security
  * OS and VM introspection
 
-==== Important Deadlines:
+==== Important Dates
 
  - Submission: March 202, 2022 -- 11:59pm AoE
  - Author Notification: April 08, 2022
  - Camera Ready Version: April 22, 2022
  - Workshop: June 06, 2022
 
-==== Submission and publication
+==== Submission and Publication
 
 There are two categories of submissions:
 
