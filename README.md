@@ -1,6 +1,6 @@
 ## SILM Workshop on Software/Hardware Security
                 
-**Monday, June 06 2022, in Genoa (Italy)**
+**Monday, June 06 2022, in Genoa (Italy).**
 Co-located with [Euro S&P 2022](http://www.ieee-security.org/TC/EuroSP2022/).
 
 
