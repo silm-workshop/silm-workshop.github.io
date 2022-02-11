@@ -12,26 +12,26 @@
 *******************************************************************************
 
 It is becoming increasingly important to combine software and hardware
-aspects in order to take into account new software attacks. For example,
-hardware vulnerabilities such as Spectre or Meltdown can be exploited by
-purely software attacks. Such attacks can be executed remotely and do not
-require physical access to the targeted hardware platform. On the other
-hand, hardware features can be used to better detect and respond to
-traditional software attacks, such as memory corruption. It is therefore
-necessary to study in depth the security of software/hardware interfaces,
-both in terms of attacks and defences.
+aspects to take new software attacks into account. For example, hardware
+vulnerabilities such as Spectre or Meltdown can be exploited purely by
+software attacks. Such attacks can be executed remotely and do not require
+physical access to the targeted hardware platform. On the other hand,
+hardware features can be used to better detect and respond to traditional
+software attacks, such as memory corruption. Therefore, it is necessary to
+study the security of software/hardware interfaces, both in terms of
+attacks and defenses.
 
 The purpose of the SILM workshop is to share experiences, tools, and
-methodologies to handle security in software/hardware interfaces. On one
-hand, we need to better assess the security guarantees provided by existing
-hardware architectures against software attacks, especially attacks against
-micro-architecture. This can be achieved by identifying new vulnerabilities
-using reverse engineering, fuzzing or other attack approaches. On the other
-hand, we also need to propose new architectures offering better resilience
-against software attacks. These architectures should rely on hardware-based
-security mechanisms to protect the software stack. One of the challenges is
-to formally specify and verify the security guarantees offered by such
-architectures.
+methodologies to handle security in software/hardware interfaces. On the
+one hand, we need to better assess the security guarantees provided by
+existing hardware architectures against software attacks, especially
+attacks against micro-architecture. This can be achieved by identifying new
+vulnerabilities using reverse engineering, fuzzing, or other attack
+approaches. On the other hand, we also need to propose new architectures
+offering better resilience against software attacks. These architectures
+should rely on hardware-based security mechanisms to protect the software
+stack. One of the challenges is to formally specify and verify the security
+guarantees offered by such architectures.
 
 The goal of this third edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
@@ -87,7 +87,6 @@ not want your *short paper* to appear in the proceedings.
  - Pascal Cotret, ENSTA Bretagne
  - Chris Dalton, HP Labs
  - Lesly-Ann Daniel, KU Leuven
- - Lucas Davi, University of Duisburg-Essen
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
