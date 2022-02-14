@@ -27,8 +27,6 @@ highlighter: pygments
 
 navigation:
 
-- text: SILM 2022
-  url: /silm-2022
 - text: Organization
   url: /organization
 - text: Dates
