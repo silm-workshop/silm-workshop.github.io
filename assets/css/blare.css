@@ -1,0 +1,96 @@
+body { overflow-y: scroll; }
+
+.social a{
+text-decoration: none;
+border: none;
+padding: 1px 5px;
+margin: -3px 5px 0 0;
+}
+
+.bl-sidebar {
+	margin-right: -1px !important;
+	border-right: 1px solid #E5E5E5;
+}
+
+.bl-main {
+	border-left: 1px solid #E5E5E5;
+}
+
+.bl-list {
+	padding-left: 24px;
+	text-indent: -12px;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.bl-panel-box {
+	border: none;
+	padding: 5px;
+}
+
+.bl-img {
+	vertical-align:text-top;
+} 
+
+code,
+kbd,
+pre,
+samp {
+	font-family: Inconsolata, monospace, serif;
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Source Sans Pro', monospace, serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Oxygen, monospace, serif;
+}
+
+.uk-navbar-nav > li > a {
+	font-family: Oxygen, monospace, serif;
+	font-size: 16px;
+}
+
+.uk-navbar-brand {
+	font-size: 26px;
+}
+
+.uk-panel-title {
+	font-size: 24px;
+}
+
+h3,
+.uk-h3 {
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+h4,
+.uk-h4 {
+	font-weight: bold;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+	background-color: rgb(205, 205, 205);
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+	background-color: rgb(205, 205, 205);
+}
+
+.uk-tab {
+	margin: 0px;
+	padding: 0px;
+	list-style: none outside none;
+	border-bottom: 1px solid rgb(229, 229, 229);
+}

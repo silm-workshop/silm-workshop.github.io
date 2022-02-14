@@ -1,1 +1,45 @@
-theme: jekyll-theme-minimal
+name: "SILM Workshop"
+description: "Home page of the SILM Workshop"
+
+url: "https://silm-workshop.github.io/"
+
+plugins: 
+ - jekyll-paginate
+
+#pagination:
+#  enabled: true
+#  per_page: 3
+#  offset: 2
+#  permalink: '/news/:num/'
+#  title: ':title - page :num of :max'
+#  limit: 0
+#  sort_field: 'date'
+#  sort_reverse: true
+sass:
+    sass_dir: _sass
+    style: indented
+
+paginate: 3
+paginate_path: /news/page:num
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+navigation:
+
+- text: SILM 2022
+  url: /silm-2022
+- text: Organization
+  url: /organization
+- text: Dates
+  url: /dates
+- text: Call for Papers
+  url: /cfp
+- text: Submission
+  url: /submission
+- text: Program
+  url: /program
+- text: Registration
+  url: /registration
+- text: Past Events
+  url: /past

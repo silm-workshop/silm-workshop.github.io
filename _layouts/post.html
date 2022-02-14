@@ -1,0 +1,25 @@
+{% include header.html %}
+
+<div class="uk-grid">
+	<div class="uk-width-4-6 uk-push-1-6">
+		<ul class="uk-pagination">
+			{% if page.previous.url %}
+				<li class="uk-pagination-previous"><a href="{{ page.previous.url }}"><i class="uk-icon-double-angle-left"></i>Older</a></li>
+			{% else %}
+				<li class="uk-pagination-previous uk-disabled"><span><i class="uk-icon-double-angle-left"></i>Older</span></li>
+			{% endif %}
+			{% if page.next.url %}
+				<li class="uk-pagination-next"><a href="{{ page.next.url }}">Newer<i class="uk-icon-double-angle-right"></i></a></li>
+			{% else %}
+				<li class="uk-pagination-next uk-disabled"><span>Newer<i class="uk-icon-double-angle-right"></i></span></li>
+			{% endif %}
+		</ul>
+
+		<div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header uk-text-justify">
+			<h2 class="uk-panel-title">{{ page.title }}</h2>
+			{{ content }}
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}

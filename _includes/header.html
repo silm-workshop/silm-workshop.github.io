@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ site.name }}</title>
+		<link rel="shortcut icon" href="/assets/img/favicon.png">
+
+		<link rel="stylesheet" href="/assets/css/uikit.css"/>
+		<link rel="stylesheet" href="/assets/css/blare.css"/>
+		<link rel="stylesheet" href="/assets/css/fonts.css"/>
+		<link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+		<!--<link rel="stylesheet" href="/assets/css/style.css">-->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/uikit.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<nav class="uk-navbar uk-navbar-attached">
+			<a class="uk-navbar-brand uk-push-1-10" href="/">SILM 2022</a> 
+			<ul class="uk-navbar-nav uk-navbar-flip uk-pull-2-10">
+				{% for link in site.navigation %}
+					{% assign current = nil %}
+					{% if page.url contains link.url %}
+						{% assign current = 'uk-active' %}
+					{% endif %}
+				<li class="{{ current }}">
+				<a href="{{ link.url }}">{{ link.text }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<div class="uk-margin">
+			<p>&nbsp;</p>
+		</div>
+

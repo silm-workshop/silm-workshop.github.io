@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata'), url(/assets/fonts/Inconsolata.woff) format('woff');
+}
+@font-face {
+	font-family: 'Oxygen';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Oxygen'), local('Oxygen-Regular'), url(/assets/fonts/Oxygen.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(/assets/fonts/SourceSansPro400.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/assets/fonts/SourceSansPro700.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(/assets/fonts/SourceSansPro400-ita.woff) format('woff');
+}
