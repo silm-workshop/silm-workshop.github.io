@@ -28,7 +28,7 @@ security mechanisms to protect the software stack. One of the challenges is
 formally specifying and verifying the security guarantees offered by such
 architectures.
 
-The goal of this third edition of the SILM workshop is to provide a forum
+The goal of this fourth edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
 that work on the security of software/hardware interfaces.
 
