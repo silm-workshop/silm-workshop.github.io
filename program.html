@@ -80,12 +80,49 @@ Instruments)</b></td>
 </table>
 
 <hr>
+<h2>Presentation Details</h2>
+
+<h3 id="bugsbunny">BugsBunny: Hopping to RTL Targets with a Directed
+Hardware-Design</h3>
+
+<b>Authors:</b> Hany Ragab, Koen Koning, Cristiano Giuffrida and Herbert
+Bos
+
+<b>Abstract:</b> Recent attacks on modern processors have demonstrated the
+severe consequences of discovering and exploiting hardware vulnerabilities.
+Simultaneously, the increasing complexity of modern chip designs and the
+ever-limited testing time presents numerous challenges to existing
+pre-silicon hardware-design verification tools. <br> Fuzzing is
+increasingly the technique of choice for discovering software
+vulnerabilities, but the same cannot be said about fuzzing for hardware
+designs vulnerabilities. Due to the data-flow nature of how hardware is
+designed, existing software fuzzing solutions cannot be readily applied in
+the hardware context, and the performance of the proposed hardware fuzzing
+solutions suffers from state explosion when applied on complex hardware
+designs. <br> In this work, we present BugsBunny, a feedback-guided
+directed hardware-design fuzzer which aims to reduce the costs of
+pre-silicon validation. BugsBunny focusses the testing resources only on
+the relevant parts of the design-under-test (DUT), by fuzzing towards a
+certain target state of the DUT and eliminating irrelevant parts of the
+design. We propose a novel distance-to-target feedback metric, capable of
+directing and guiding the fuzzer towards the desired target state, which is
+based on lightweight data-flow analysis and instrumentation of the DUT. By
+running the DUT on an FPGA, BugsBunny achieves high fuzzing throughput,
+outperforming existing simulation-based solutions. <br> We perform an
+end-to-end evaluation of BugsBunny on complex SoC designs (e.g., the RISC-V
+BOOM), where preliminary experiments demonstrate a significant reduction in
+the number of fuzzing seeds that are required before the DUT reaches the
+target state. <br><br>
+
+<b>Paper:</b> <a
+href="2022-papers/silm2022-bugsbunny.pdf">silm2022-bugsbunny.pdf</a>
+
 
 <h3 id="beerr">BEERR: Bench of Embedded system Experiments for Reproducible
 Research</h3>
 
 <b>Authors:</b> Paul Olivier, Huy Ngo Xuan and
-Aurélien Francillon
+Aurélien Francillon <br><br>
 
 <b>Abstract:</b> Reproducing experiments is a key component to further
 research and knowledge. Testbeds provide a controlled and configurable
@@ -102,8 +139,9 @@ original devices. <br> In this paper, we tackle this problem by proposing a
 new infrastructure, and online service called &quot;Bench of Embedded
 system Experiments for Reproducible Research&quot; (BEERR). It aims to both
 make physical devices available remotely and facilitate the setup and
-reproduction of published experiments.
+reproduction of published experiments. <br><br>
 
-<b>Paper:</b> <a href="2022-papers/silm2022-beerr.pdf">silm2022-beerr.pdf</a>
+<b>Paper:</b> <a
+href="2022-papers/silm2022-beerr.pdf">silm2022-beerr.pdf</a>
 
 
