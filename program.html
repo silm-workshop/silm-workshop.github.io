@@ -192,10 +192,23 @@ efficiently used to mitigate attacks in contemporary computing devices.
 
 <b>Authors:</b> Matthieu Baty, Guillaume Hiet and Pierre Wilke<br><br>
 
-<b>Abstract:</b> 
+<b>Abstract:</b> In recent years, the disclosure of several significant
+security vulnerabilities such as Spectre and Meltdown has revealed the
+trust put in some presumed security properties of commonplace hardware to
+be misplaced. A way of rebuilding this trust would be to make these
+security properties explicit and offer corresponding computer-checked
+proofs. <br> Formally proving security properties about hardware systems
+might seem prohibitively complex and expensive.  This paper addresses this
+concern by describing a realistic and accessible methodology for specifying
+and proving security properties during hardware development. We describe
+the formal specification and implementation of a shadow stack mechanism on
+an RV32I processor. Our final objective would be to prove that this
+security mechanism is correct, i.e., any illegal modification of a return
+address does indeed result in the termination of the whole system.
 <br><br>
 
-<b>Paper:</b> 
+<b>Paper:</b> <a
+href="../2022-papers/silm2022-shadowstack.pdf">silm2022-shadowstack.pdf</a>
 
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
