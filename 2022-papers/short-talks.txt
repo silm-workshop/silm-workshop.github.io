@@ -1,0 +1,15 @@
+
+
+
+
+
+Jo Van Bulck (KU Leuven)
+
+* A case for ABI unification in Intel SGX runtimes (SysTeX opinion paper and follow-up research with master students)
+* Mind the gap work and follow-up ideas
+* ongoing research with master student on MSP430 IPE security limitations (several concrete findings already, but not sure if we can/should talk about this publicly already before checking with TI -- prob better not, TBD)
+
+
+
+
+
