@@ -10,6 +10,32 @@ Jo Van Bulck (KU Leuven)
 * ongoing research with master student on MSP430 IPE security limitations (several concrete findings already, but not sure if we can/should talk about this publicly already before checking with TI -- prob better not, TBD)
 
 
+Lesly-Ann Daniel (KU Leuven)
+
+Title: Towards Secure Speculation for the Constant-Time Policy
+
+Abstract: Speculative execution is important for processor performance but
+enable speculative execution attacks that undermine software-enforced
+security properties, such as constant-time. Recently, hardware-software
+contracts have been proposed as way to formally reason about hardware-based
+countermeasures, and enable to split the responsibility of ensuring
+security between hardware and software. An interesting hardware-software
+co-design, would be to let the enforcement of vanilla constant-time up to
+the developers, and guarantee in hardware that speculative execution do not
+leak secrets. This co-design, which we call secure speculation for the
+constant-time policy, ensures that vanilla constant-time programs can
+securely be executed on a speculative out-of-order processor.
+
+In this talk we discuss a form of hardware taint-tracking mechanism that
+tracks secrets in the processor pipeline, and ensures that they do not
+influence the microarchitectural state during speculative execution (à la
+ConTExT or SpectreGuard). We present a work-in-progress formalization of
+such taint tracking mechanism, and show that it provides secure speculation
+for the constant-time policy under a broad class of speculation mechanisms,
+covering all known Spectre attacks, even including load value injection
+(LVI) attacks. We implement this countermeasure in a prototype processor,
+and propose a first feasibility evaluation regarding its costs and
+benefits.
 
 
 
