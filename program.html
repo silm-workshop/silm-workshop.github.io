@@ -17,7 +17,7 @@ are in CEST/UTC+2.
 </tr>
 <tr style="background-color:#FFF0C0;">
   <td>09:15</td><td></td>
-  <td><b>Invited Talk: <a href="#brent"><b>tba</b></a></b><br>Prof. Brent Byunghoon Kang (KAIST)</b></td>
+  <td><b>Invited Talk: <a href="#brent"><b>The Case for System Integrity Monitors based on A Hardware Memory Snooper</b></a></b><br>Prof. Brent Byunghoon Kang (KAIST)</b></td>
 </tr>
 <tr style="background-color:#BEFFC5;border-bottom: 1px solid
 #000;border-top: 1px solid #000;">
@@ -89,16 +89,64 @@ announced)</b></a></td>
 
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<h3 id="brent">Invited Talk: </h3>
+<h3 id="brent">Invited Talk: The Case for System Integrity Monitors based
+on A Hardware Memory Snooper</h3>
 
-<b>Speaker:</b> Prof. Brent Byunghoon Kang (KAIST)
+<b>Speaker:</b> Prof. Brent Byunghoon Kang (<a
+href="https://cysec.kr/">KAIST</a>) <br>
+Graduate School of Information Security, School of Computing at KAIST
 <br><br>
 
-<b>Abstract:</b>
+<b>Abstract:</b> The advanced malware binaries have shown great
+sophistication in compromising system kernel, persisting their attacks
+against the host system without being detected. To counter this serious
+threat, our team has been working on creating a series of system integrity
+monitors based on snooping on the kernel activities with no performance
+hits on the host system. <br> I will introduce our first prototype, called
+Vigilare, a kernel integrity monitor architected to snoop on the bus
+traffic of the host system from separate independent hardware. This
+snoop-based monitoring of Vigilare overcomes the limitations of the
+previous snapshot-based monitoring solutions that cannot detect transient
+attacks that occur in between snapshots. Vigilare snoops the bus traffic on
+the host and can catch all the transient attacks with no performance
+degradation. In contrast, the snapshot-based monitor could not detect all
+the attacks and induced considerable performance degradation. <br> I will
+further describe KI-Mon as our next effort to protect dynamic kernel
+regions. Monitoring dynamic data structures manipulated by modern advanced
+rootkits has been considered a complex and challenging problem as they are
+frequently and constantly modified during normal operations of the kernel.
+I will present how we addressed the challenges in tracking mutable data
+objects by creating an advanced snooper module with a white-listed values
+filter that can also provide on-demand verification of related data
+structures to assure the semantic invariants of dynamic data structures.
+<br> Finally, I will present an “Address Translation Redirection Attack”
+(ATRA)” that may allow an attacker to evade all the existing hardware-based
+monitors. ATRA exploits the memory management subsystem required for
+translating the virtual address space in which all the programs execute
+into the physical address space that the actual machine hardware operates
+on. This work motivated the importance of hardening the memory translation
+mechanism to ensure robust hardware-based kernel integrity monitors.
 <br><br>
 
-<b>Speaker's Bio:</b> 
-<br><br>
+<b>Speaker's Bio:</b> Brent ByungHoon Kang received Ph.D. in Computer
+Science from the University of California at Berkeley, an M.S. from the
+University of Maryland at College Park, and a B.S. from Seoul National
+University. He is a professor at the School of Computing at KAIST and has
+served as Chief Professor of the Graduate School of Information Security.
+He has also been with George Mason University as an associate professor in
+the Volgenau School of Engineering. His academic services include Program
+Committee for IEEE Security and Privacy, ACM CCS, USENIX SECURITY, and
+NDSS. <br> His research interests include designing Trusted Computing
+Environment (TCE) and securing host systems based on the TCE (e.g., System
+integrity monitors, HW-based trusted execution environment, Memory address
+translation integrity, Code-Reuse-Attack (CRA) defenses, Heap memory
+defenses, Malware analysis, and Dialects computing). <br> He has advised
+and educated the next-generation cyber security researchers, managers, the
+federal workforce, and policymakers. He has created a series of NSF-funded
+hands-on Information Assurance (IA) education programs. His research
+efforts have been sponsored by IITP, ONR, NRF, NSF, IARPA, ARO, ADD, NSRi,
+ETRI, TIAA-CREF Faculty Fellowship, Bank of America, SK Telecom, and
+Samsung. <br><br>
 
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
