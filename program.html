@@ -76,9 +76,7 @@ Aurélien Francillon</td>
     <ul>
       <li>Jo Van Bulck (KU Leuven): <a href="jo">Towards ABI Unification for Intel SGX Enclave Shielding Runtimes</a></li>
       <li>Lesly-Ann Daniel (KU Leuven): <a href="lesly">Towards Secure Speculation for the Constant-Time Policy</a></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Saad Memon (Uni Luxembourg)</li>
     </ul>
   </td>
 </tr>
@@ -132,7 +130,9 @@ monitors. ATRA exploits the memory management subsystem required for
 translating the virtual address space in which all the programs execute
 into the physical address space that the actual machine hardware operates
 on. This work motivated the importance of hardening the memory translation
-mechanism to ensure robust hardware-based kernel integrity monitors. &gt;&gt;&gt; <i>Slides:</i> <a href="2022-slides/silm2022-brent.pdf">silm2022-brent.pdf</a><br><br>
+mechanism to ensure robust hardware-based kernel integrity monitors. <br>
+&gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-slides/silm2022-brent.pdf">silm2022-brent.pdf</a><br><br>
 
 <b>Speaker's Bio:</b> Brent ByungHoon Kang received Ph.D. in Computer
 Science from the University of California at Berkeley, an M.S. from the
@@ -249,7 +249,8 @@ information that may be leaked through microarchitectural side-effects.
 Concretely, I will present (1) how to model the information flows at the
 core of Spectre-style attacks, (2) how to formalize hardware-software
 contracts, (3) how to use contracts to reason about the security of
-hardware and software. &gt;&gt;&gt; <i>Slides:</i> <a href="2022-slides/silm2022-marco.pdf">silm2022-marco.pdf</a> <br><br>
+hardware and software. <br> &gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-slides/silm2022-marco.pdf">silm2022-marco.pdf</a> <br><br>
 
 <b>Speaker's Bio:</b> Marco Guarnieri is an assistant professor at the
 IMDEA Software Institute. Before that, he completed a Ph.D. at the
@@ -278,8 +279,10 @@ and proving security properties during hardware development. We describe
 the formal specification and implementation of a shadow stack mechanism on
 an RV32I processor. Our final objective would be to prove that this
 security mechanism is correct, i.e., any illegal modification of a return
-address does indeed result in the termination of the whole system.
-&gt;&gt;&gt; <i>Slides:</i> <a href="2022-slides/silm2022-shadowstack.pdf">silm2022-shadowstack.pdf</a> <br><br>
+address does indeed result in the termination of the whole system.  <br>
+&gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-slides/silm2022-shadowstack.pdf">silm2022-shadowstack.pdf</a>
+<br><br>
 
 <b>Paper:</b> <a
 href="../2022-papers/silm2022-shadowstack.pdf">silm2022-shadowstack.pdf</a>
@@ -357,21 +360,23 @@ href="../2022-papers/silm2022-beerr.pdf">silm2022-beerr.pdf</a>
 <br><br>
 
 <b>Abstract:</b> With hardware support for trusted execution, most notably
-Intel SGX, becoming widely available, recent years have seen the emergence of
-numerous shielding runtimes to transparently protect enclave applications in
-hostile environments. While this present diversity supports a wide range of
-enclave programming languages and development paradigms, requirements at the
-lowest level of the application binary interface (ABI) remain strikingly
-similar. Particularly, from the untrusted side, knowledge about the enclave
-binary layout is required for the loading and calling process, and, from the
-trusted side, small hand-written assembly stubs are needed on enclave
-entry/exit to initialize or cleanse CPU registers. <br> This talk and call for
-action analyzes the historical ABI vulnerability landscape and argues that
-there is _no_ technical reason for maintaining separate, often notoriously
-complex and vulnerable ABI code bases. Moving forward, we outline challenges
-and opportunities for a single, unified ABI sanitization layer that complies
-with best practices from software engineering and can be scrutinized and
-integrated across SGX runtimes. &gt;&gt;&gt; <i>Slides:</i> <a href="2022-slides/silm2022-jo.pdf">silm2022-jo.pdf</a> <br><br>
+Intel SGX, becoming widely available, recent years have seen the emergence
+of numerous shielding runtimes to transparently protect enclave
+applications in hostile environments. While this present diversity supports
+a wide range of enclave programming languages and development paradigms,
+requirements at the lowest level of the application binary interface (ABI)
+remain strikingly similar. Particularly, from the untrusted side, knowledge
+about the enclave binary layout is required for the loading and calling
+process, and, from the trusted side, small hand-written assembly stubs are
+needed on enclave entry/exit to initialize or cleanse CPU registers. <br>
+This talk and call for action analyzes the historical ABI vulnerability
+landscape and argues that there is _no_ technical reason for maintaining
+separate, often notoriously complex and vulnerable ABI code bases. Moving
+forward, we outline challenges and opportunities for a single, unified ABI
+sanitization layer that complies with best practices from software
+engineering and can be scrutinized and integrated across SGX runtimes. <br>
+&gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-slides/silm2022-jo.pdf">silm2022-jo.pdf</a> <br><br>
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <hr>
@@ -380,25 +385,28 @@ integrated across SGX runtimes. &gt;&gt;&gt; <i>Slides:</i> <a href="2022-slides
 <b>Speaker:</b> Lesly-Ann Daniel (KU Leuven)
 <br><br>
 
-<b>Abstract:</b> Speculative execution is important for processor performance
-but enables speculative execution attacks that undermine software-enforced
-security properties, such as constant-time. Recently, hardware-software
-contracts have been proposed as a way to formally reason about hardware-based
-countermeasures and to enable splitting the responsibility of ensuring security
-between hardware and software. An interesting hardware-software co-design would
-be to let the enforcement of vanilla constant-time up to the developers and
-guarantee in hardware that speculative execution does not leak secrets. This
-co-design, which we call secure speculation for the constant-time policy,
-ensures that vanilla constant-time programs can be securely executed on a
-speculative out-of-order processor. <br> In this talk, we discuss a form of
-hardware taint-tracking mechanism that tracks secrets in the processor
-pipeline, and ensures that they do not influence the microarchitectural state
-during speculative execution (à la ConTExT or SpectreGuard). We present a
-work-in-progress formalization of such a taint tracking mechanism and show that
-it provides secure speculation for the constant-time policy under a broad class
-of speculation mechanisms, covering all known Spectre attacks, even including
-load value injection (LVI) attacks. We implement this countermeasure in a
-prototype processor, and propose a first feasibility evaluation regarding its
-costs and benefits. &gt;&gt;&gt; <i>Slides:</i> <a href="2022-slides/silm2022-lesly.pdf">silm2022-lesly.pdf</a> <br><br>
+<b>Abstract:</b> Speculative execution is important for processor
+performance but enables speculative execution attacks that undermine
+software-enforced security properties, such as constant-time. Recently,
+hardware-software contracts have been proposed as a way to formally reason
+about hardware-based countermeasures and to enable splitting the
+responsibility of ensuring security between hardware and software. An
+interesting hardware-software co-design would be to let the enforcement of
+vanilla constant-time up to the developers and guarantee in hardware that
+speculative execution does not leak secrets. This co-design, which we call
+secure speculation for the constant-time policy, ensures that vanilla
+constant-time programs can be securely executed on a speculative
+out-of-order processor. <br> In this talk, we discuss a form of hardware
+taint-tracking mechanism that tracks secrets in the processor pipeline, and
+ensures that they do not influence the microarchitectural state during
+speculative execution (à la ConTExT or SpectreGuard). We present a
+work-in-progress formalization of such a taint tracking mechanism and show
+that it provides secure speculation for the constant-time policy under a
+broad class of speculation mechanisms, covering all known Spectre attacks,
+even including load value injection (LVI) attacks. We implement this
+countermeasure in a prototype processor, and propose a first feasibility
+evaluation regarding its costs and benefits. <br> &gt;&gt;&gt;
+<i>Slides:</i> <a
+href="../2022-slides/silm2022-lesly.pdf">silm2022-lesly.pdf</a> <br><br>
 
 
