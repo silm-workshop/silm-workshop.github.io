@@ -72,8 +72,15 @@ Aurélien Francillon</td>
 </tr>
 <tr>
   <td>17:00</td><td></td>
-  <td><a href="#shorttalks"><b>Short Talks and Discussion (details to be
-announced)</b></a></td>
+  <td><a href="#shorttalks"><b>Short Talks and Discussion (details to be announced)</b></a> <br>
+    <ul>
+      <li>Jo Van Bulck (KU Leuven): <a href="jo">Towards ABI Unification for Intel SGX Enclave Shielding Runtimes</a></li>
+      <li>Lesly-Ann Daniel (KU Leuven): <a href="lesly">Towards Secure Speculation for the Constant-Time Policy</a></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </td>
 </tr>
 <tr>
   <td>18:00</td><td></td>
@@ -281,35 +288,6 @@ href="../2022-papers/silm2022-shadowstack.pdf">silm2022-shadowstack.pdf</a>
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <hr>
-<h3 id="beerr">BEERR: Bench of Embedded system Experiments for Reproducible
-Research</h3>
-
-<b>Authors:</b> Paul Olivier, Huy Ngo Xuan and
-Aurélien Francillon <br><br>
-
-<b>Abstract:</b> Reproducing experiments is a key component to further
-research and knowledge. Testbeds provide a controlled and configurable
-environment in which experiments can be conducted in a repeatable and
-observable manner. In the field of system security, and binary analysis,
-several challenges hinder reproducible research, in particular when code is
-interacting tightly with low level hardware and physical devices. In those
-conditions, dynamic analysis techniques often require the physical device
-to correctly complete (hardware-in-the-loop). In recent years many
-re-hosting techniques have been developed and evaluating their respective
-performance requires to compare them with an hardware-in-the-loop
-evaluation. However, it is challenging to share, acquire or maintain the
-original devices. <br> In this paper, we tackle this problem by proposing a
-new infrastructure, and online service called &quot;Bench of Embedded
-system Experiments for Reproducible Research&quot; (BEERR). It aims to both
-make physical devices available remotely and facilitate the setup and
-reproduction of published experiments. <br><br>
-
-<b>Paper:</b> <a
-href="../2022-papers/silm2022-beerr.pdf">silm2022-beerr.pdf</a>
-
-
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<hr>
 <h3 id="archanaa">Invited Talk: Configuring Security for Intermittent Computing</h3>
 
 <b>Speaker:</b> Dr. Archanaa Krishnan (Texas Instruments)
@@ -341,7 +319,54 @@ from Vellore Institute of Technology.  <br><br>
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <hr>
+<h3 id="beerr">BEERR: Bench of Embedded system Experiments for Reproducible
+Research</h3>
+
+<b>Authors:</b> Paul Olivier, Huy Ngo Xuan and
+Aurélien Francillon <br><br>
+
+<b>Abstract:</b> Reproducing experiments is a key component to further
+research and knowledge. Testbeds provide a controlled and configurable
+environment in which experiments can be conducted in a repeatable and
+observable manner. In the field of system security, and binary analysis,
+several challenges hinder reproducible research, in particular when code is
+interacting tightly with low level hardware and physical devices. In those
+conditions, dynamic analysis techniques often require the physical device
+to correctly complete (hardware-in-the-loop). In recent years many
+re-hosting techniques have been developed and evaluating their respective
+performance requires to compare them with an hardware-in-the-loop
+evaluation. However, it is challenging to share, acquire or maintain the
+original devices. <br> In this paper, we tackle this problem by proposing a
+new infrastructure, and online service called &quot;Bench of Embedded
+system Experiments for Reproducible Research&quot; (BEERR). It aims to both
+make physical devices available remotely and facilitate the setup and
+reproduction of published experiments. <br><br>
+
+<b>Paper:</b> <a
+href="../2022-papers/silm2022-beerr.pdf">silm2022-beerr.pdf</a>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
 <h3 id="shorttalks">Short Talks and Discussion</h3>
 
-Details to be announced.
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h4 id="jo">Towards ABI Unification for Intel SGX Enclave Shielding Runtimes</h4>
+
+<b>Speaker:</b> Jo Van Bulck (KU Leuven)
+<br><br>
+
+<b>Abstract:</b> With hardware support for trusted execution, most notably Intel SGX, becoming widely available, recent years have seen the emergence of numerous shielding runtimes to transparently protect enclave applications in hostile environments. While this present diversity supports a wide range of enclave programming languages and development paradigms, requirements at the lowest level of the application binary interface (ABI) remain strikingly similar. Particularly, from the untrusted side, knowledge about the enclave binary layout is required for the loading and calling process, and, from the trusted side, small hand-written assembly stubs are needed on enclave entry/exit to initialize or cleanse CPU registers. <br> This talk and call for action analyzes the historical ABI vulnerability landscape and argues that there is _no_ technical reason for maintaining separate, often notoriously complex and vulnerable ABI code bases. Moving forward, we outline challenges and opportunities for a single, unified ABI sanitization layer that complies with best practices from software engineering and can be scrutinized and integrated across SGX runtimes. <br><br>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h4 id="lesly">Towards Secure Speculation for the Constant-Time Policy</h4>
+
+<b>Speaker:</b> Lesly-Ann Daniel (KU Leuven)
+<br><br>
+
+<b>Abstract:</b> Speculative execution is important for processor performance but
+enables speculative execution attacks that undermine software-enforced security properties, such as constant-time. Recently, hardware-software contracts have been proposed as a way to formally reason about hardware-based countermeasures and to enable splitting the responsibility of ensuring security between hardware and software. An interesting hardware-software co-design would be to let the enforcement of vanilla constant-time up to the developers and guarantee in hardware that speculative execution does not leak secrets. This co-design, which we call secure speculation for the constant-time policy, ensures that vanilla constant-time programs can be securely executed on a speculative out-of-order processor. <br> In this talk, we discuss a form of hardware taint-tracking mechanism that tracks secrets in the processor pipeline, and ensures that they do not influence the microarchitectural state during speculative execution (à la ConTExT or SpectreGuard). We present a work-in-progress formalization of such a taint tracking mechanism and show that it provides secure speculation for the constant-time policy under a broad class of speculation mechanisms, covering all known Spectre attacks, even including load value injection (LVI) attacks. We implement this countermeasure in a prototype processor, and propose a first feasibility evaluation regarding its costs and benefits. <br><br>
+
 
