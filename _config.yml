@@ -1,10 +1,10 @@
-name: "SILM Workshop"
+ame: "SILM Workshop"
 description: "Home page of the SILM Workshop"
 
 url: "https://silm-workshop.github.io/"
 
 plugins: 
- - jekyll-paginate
+- jekyll-paginate
 
 #pagination:
 #  enabled: true
@@ -37,6 +37,8 @@ navigation:
   url: /submission
 - text: Program
   url: /program
+    - text: test
+      url: test
 - text: Registration
   url: /registration
 - text: Past Events
