@@ -36,7 +36,7 @@ navigation:
 - text: Submission
   url: /submission
 - text: Program
-  url: /program
+  subfolderitems:
     - text: test
       url: test
 - text: Registration
