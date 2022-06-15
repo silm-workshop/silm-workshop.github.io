@@ -1,0 +1,409 @@
+---
+title: Program -- SILM 2022, 2022-06-06, with <a href="https://www.ieee-security.org/TC/EuroSP2022/">EuroSP</a> in Genoa, IT
+layout: default
+---
+
+<br><br>
+<table>
+<tr style="border-bottom: 1px solid #000;border-top: 1px solid #000;">
+  <th>Time</th><th>&nbsp;&nbsp;&nbsp;</th><th></th>
+</tr>
+<tr>
+  <td>09:00</td><td></td>
+  <td>Opening and Workshop Introduction</td>
+</tr>
+<tr style="background-color:#FFF0C0;">
+  <td>09:15</td><td></td>
+  <td><b>Invited Talk: <a href="#brent"><b>The Case for System Integrity Monitors based on A Hardware Memory Snooper</b></a></b><br>Prof. Brent Byunghoon Kang (KAIST)</b></td>
+</tr>
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>10:15</td><td></td>
+  <td>Break (Coffee)</td>
+</tr>
+<tr>
+  <td>10:45</td><td></td>
+  <td><a href="#bugsbunny"><b>BugsBunny: Hopping to RTL Targets with a Directed
+Hardware-Design Fuzzer</b></a><br>Hany Ragab, Koen Koning, Cristiano Giuffrida and
+Herbert Bos</td>
+</tr>
+<tr style="background-color:#FFF0C0;">
+  <td>11:15</td><td></td>
+  <td><b>Invited Talk: <a href="#ekberg"><b>Hardware-assisted memory
+protection</b></a></b><br>Dr. Jan-Erik Ekberg (Huawei)</td>
+</tr>
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>12:15</td><td></td>
+  <td>Break (Lunch)</td>
+</tr>
+<tr style="background-color:#FFF0C0;">
+  <td>13:30</td><td></td>
+  <td><b>Invited Talk: <a href="#marco"><b>Principled foundations for microarchitectural security</b></a></b><br>Prof. Marco Guarnieri (IMDEA)</b></td>
+</tr>
+<tr>
+  <td>14:30</td><td></td>
+  <td><a href="#shadowstack"><b>Work in progress: A formally verified shadow stack for
+RISC-V</b></a><br>
+Matthieu Baty, Guillaume Hiet and Pierre Wilke</td>
+</tr>
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>15:00</td><td></td>
+  <td>Break (whatever)</td>
+</tr>
+<tr style="background-color:#FFF0C0;">
+  <td>15:15</td><td></td>
+  <td><b>Invited Talk: <a href="#archanaa"><b>Configuring Security for Intermittent Computing</b></a></b><br>Dr. Archanaa Krishnan (Texas Instruments)</b></td>
+</tr>
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>16:15</td><td></td>
+  <td>Break (Coffee)</td>
+</tr>
+<tr>
+  <td>16:30</td><td></td>
+  <td><a href="#beerr"><b>BEERR: Bench of Embedded system Experiments for
+Reproducible Research</b></a><br>Paul Olivier, Huy Ngo Xuan and
+Aurélien Francillon</td>
+</tr>
+<tr style="border-bottom: 1px solid #000;border-top: 1px solid #000;">
+  <td>17:00</td><td></td>
+  <td><a href="#shorttalks"><b>Short Talks and Discussion</b></a>
+    <ul>
+      <li>Jo Van Bulck (KU Leuven): <a href="jo">Towards ABI Unification for Intel SGX Enclave Shielding Runtimes</a></li>
+      <li>Lesly-Ann Daniel (KU Leuven): <a href="lesly">Towards Secure Speculation for the Constant-Time Policy</a></li>
+      <li>Saad Memon (Uni Luxembourg)</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>18:00</td><td></td>
+  <td>Closing Remarks</td>
+</tr>
+</table>
+
+
+<!-- ================================================================= -->
+<hr><hr>
+<h2>Presentation Details</h2>
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<h3 id="brent">Invited Talk: The Case for System Integrity Monitors based
+on A Hardware Memory Snooper</h3>
+
+<b>Speaker:</b> Prof. Brent Byunghoon Kang (<a
+href="https://cysec.kr/">KAIST</a>) <br>
+Graduate School of Information Security, School of Computing at KAIST
+<br><br>
+
+<b>Abstract:</b> The advanced malware binaries have shown great
+sophistication in compromising system kernel, persisting their attacks
+against the host system without being detected. To counter this serious
+threat, our team has been working on creating a series of system integrity
+monitors based on snooping on the kernel activities with no performance
+hits on the host system. <br> I will introduce our first prototype, called
+Vigilare, a kernel integrity monitor architected to snoop on the bus
+traffic of the host system from separate independent hardware. This
+snoop-based monitoring of Vigilare overcomes the limitations of the
+previous snapshot-based monitoring solutions that cannot detect transient
+attacks that occur in between snapshots. Vigilare snoops the bus traffic on
+the host and can catch all the transient attacks with no performance
+degradation. In contrast, the snapshot-based monitor could not detect all
+the attacks and induced considerable performance degradation. <br> I will
+further describe KI-Mon as our next effort to protect dynamic kernel
+regions. Monitoring dynamic data structures manipulated by modern advanced
+rootkits has been considered a complex and challenging problem as they are
+frequently and constantly modified during normal operations of the kernel.
+I will present how we addressed the challenges in tracking mutable data
+objects by creating an advanced snooper module with a white-listed values
+filter that can also provide on-demand verification of related data
+structures to assure the semantic invariants of dynamic data structures.
+<br> Finally, I will present an “Address Translation Redirection Attack”
+(ATRA)” that may allow an attacker to evade all the existing hardware-based
+monitors. ATRA exploits the memory management subsystem required for
+translating the virtual address space in which all the programs execute
+into the physical address space that the actual machine hardware operates
+on. This work motivated the importance of hardening the memory translation
+mechanism to ensure robust hardware-based kernel integrity monitors. <br>
+&gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-papers/silm2022-slides-brent.pdf">silm2022-brent.pdf</a><br><br>
+
+<b>Speaker's Bio:</b> Brent ByungHoon Kang received Ph.D. in Computer
+Science from the University of California at Berkeley, an M.S. from the
+University of Maryland at College Park, and a B.S. from Seoul National
+University. He is a professor at the School of Computing at KAIST and has
+served as Chief Professor of the Graduate School of Information Security.
+He has also been with George Mason University as an associate professor in
+the Volgenau School of Engineering. His academic services include Program
+Committee for IEEE Security and Privacy, ACM CCS, USENIX SECURITY, and
+NDSS. <br> His research interests include designing Trusted Computing
+Environment (TCE) and securing host systems based on the TCE (e.g., System
+integrity monitors, HW-based trusted execution environment, Memory address
+translation integrity, Code-Reuse-Attack (CRA) defenses, Heap memory
+defenses, Malware analysis, and Dialects computing). <br> He has advised
+and educated the next-generation cyber security researchers, managers, the
+federal workforce, and policymakers. He has created a series of NSF-funded
+hands-on Information Assurance (IA) education programs. His research
+efforts have been sponsored by IITP, ONR, NRF, NSF, IARPA, ARO, ADD, NSRi,
+ETRI, TIAA-CREF Faculty Fellowship, Bank of America, SK Telecom, and
+Samsung. <br><br>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="bugsbunny">BugsBunny: Hopping to RTL Targets with a Directed
+Hardware-Design Fuzzer</h3>
+
+<b>Authors:</b> Hany Ragab, Koen Koning, Cristiano Giuffrida and Herbert
+Bos <br><br>
+
+<b>Abstract:</b> Recent attacks on modern processors have demonstrated the
+severe consequences of discovering and exploiting hardware vulnerabilities.
+Simultaneously, the increasing complexity of modern chip designs and the
+ever-limited testing time presents numerous challenges to existing
+pre-silicon hardware-design verification tools. <br> Fuzzing is
+increasingly the technique of choice for discovering software
+vulnerabilities, but the same cannot be said about fuzzing for hardware
+designs vulnerabilities. Due to the data-flow nature of how hardware is
+designed, existing software fuzzing solutions cannot be readily applied in
+the hardware context, and the performance of the proposed hardware fuzzing
+solutions suffers from state explosion when applied on complex hardware
+designs. <br> In this work, we present BugsBunny, a feedback-guided
+directed hardware-design fuzzer which aims to reduce the costs of
+pre-silicon validation. BugsBunny focusses the testing resources only on
+the relevant parts of the design-under-test (DUT), by fuzzing towards a
+certain target state of the DUT and eliminating irrelevant parts of the
+design. We propose a novel distance-to-target feedback metric, capable of
+directing and guiding the fuzzer towards the desired target state, which is
+based on lightweight data-flow analysis and instrumentation of the DUT. By
+running the DUT on an FPGA, BugsBunny achieves high fuzzing throughput,
+outperforming existing simulation-based solutions. <br> We perform an
+end-to-end evaluation of BugsBunny on complex SoC designs (e.g., the RISC-V
+BOOM), where preliminary experiments demonstrate a significant reduction in
+the number of fuzzing seeds that are required before the DUT reaches the
+target state. <br><br>
+
+<b>Paper:</b> <a
+href="../2022-papers/silm2022-bugsbunny.pdf">silm2022-bugsbunny.pdf</a>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="ekberg">Invited Talk: Hardware-assisted memory protection</h3>
+
+<b>Speaker:</b> Dr. Jan-Erik Ekberg (Huawei) <br><br>
+
+<b>Abstract:</b> Contemporary and soon-to emerge commercial processors
+carry architectural features that, when used, allows for authentication of
+register content when such are stored in memory, memory tagging (or
+coloring) so that mutually exclusive memory domains at a high resolution
+can be set up. Flow-control features such as shadow stacks and
+branch-target protections complete the picture.  My talk will be about
+recent and ongoing research where we leverage these features in the
+compiler pipeline or by software design -- providing solutions for
+call-flow integrity and data safety for both user-space programs and code
+at higher privilege levels. My intent is to provide a panorama and share
+insight into how these features can be leveraged for security, as well as
+to shed light on the functional and performance cost of doing so. <br><br>
+
+<b>Speaker's Bio:</b> Dr. Jan-Erik Ekberg has worked in the telecom
+industry with the topic of securing mobile and embedded devices for 20+
+years. He has participated in security standardization (Mobile TPM, WLAN,
+BT, BLE security, GP TEE standards) and he is the holder of 80+ patent
+families in the field of trusted execution environments, secure enclaves,
+smart cards etc.  Jan-Erik's current affiliation is Head of Helsinki System
+Security Laboratory in Huawei, Finland, but he also serves as adjunct
+professor in Computer Science (Security) in his alma mater, Aalto
+University. One of Jan-Erik's recent research interests is on
+hardware-assisted memory protection technologies, and how these are
+efficiently used to mitigate attacks in contemporary computing devices.
+<br><br>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="marco">Invited Talk: Principled foundations for microarchitectural security</h3>
+
+<b>Speaker:</b> Prof. Marco Guarnieri (IMDEA)
+<br><br>
+
+<b>Abstract:</b> Microarchitectural attacks, such as Spectre and Meltdown,
+illustrate that artifacts of hardware implementations (like speculative and
+out-of-order execution) can result in measurable side-effects on program
+execution time that attackers can exploit to compromise a system’s
+security. These attacks arise from emerging behaviors obtained when
+combining hardware and software.  Building systems that are resistant
+against these attacks requires fundamentally rethinking the design of
+existing security mechanisms. <br> In this talk, I will focus on
+speculative execution attacks--a specific class of microarchitectural
+attacks--and I will illustrate a principled approach for reasoning about
+security against these attacks. The key component of this approach is a
+<i>hardware-software contract</i>, a formal ISA-level specification of the
+information that may be leaked through microarchitectural side-effects.
+Concretely, I will present (1) how to model the information flows at the
+core of Spectre-style attacks, (2) how to formalize hardware-software
+contracts, (3) how to use contracts to reason about the security of
+hardware and software. <br> &gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-papers/silm2022-slides-marco.pdf">silm2022-marco.pdf</a> <br><br>
+
+<b>Speaker's Bio:</b> Marco Guarnieri is an assistant professor at the
+IMDEA Software Institute. Before that, he completed a Ph.D. at the
+Institute of Information Security at ETH Zurich. <br> His research focuses
+on the design, analysis, and implementation of practical systems for
+securely storing and processing sensitive data. He applies his research to
+the analysis of micro-architectural side-channel attacks (and
+countermeasures) and to database security.  <br><br>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="shadowstack">Work in progress: A formally verified shadow stack for RISC-V</h3>
+
+<b>Authors:</b> Matthieu Baty, Guillaume Hiet and Pierre Wilke<br><br>
+
+<b>Abstract:</b> In recent years, the disclosure of several significant
+security vulnerabilities such as Spectre and Meltdown has revealed the
+trust put in some presumed security properties of commonplace hardware to
+be misplaced. A way of rebuilding this trust would be to make these
+security properties explicit and offer corresponding computer-checked
+proofs. <br> Formally proving security properties about hardware systems
+might seem prohibitively complex and expensive.  This paper addresses this
+concern by describing a realistic and accessible methodology for specifying
+and proving security properties during hardware development. We describe
+the formal specification and implementation of a shadow stack mechanism on
+an RV32I processor. Our final objective would be to prove that this
+security mechanism is correct, i.e., any illegal modification of a return
+address does indeed result in the termination of the whole system.  <br>
+&gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-papers/silm2022-slides-shadowstack.pdf">silm2022-shadowstack.pdf</a>
+<br><br>
+
+<b>Paper:</b> <a
+href="../2022-papers/silm2022-shadowstack.pdf">silm2022-shadowstack.pdf</a>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="archanaa">Invited Talk: Configuring Security for Intermittent Computing</h3>
+
+<b>Speaker:</b> Dr. Archanaa Krishnan (Texas Instruments)
+<br><br>
+
+<b>Abstract:</b> Intermittent computing devices are powered by energy
+harvested from ambient sources. They are ideal as edge devices in several
+applications, such as medical implants, energy meters, and the outer space,
+because of their energy autonomous operation. The security for intermittent
+computing lies at the intersection of the world of intermittent computing
+and the world of secure embedded devices. This talk will provide an
+introduction on the what, when, why, and how to secure an embedded device
+at the intersection of these two worlds. It will provide several design
+factors between the two worlds that affect the net performance of secure
+intermittent systems. It will also provide insight into combining key
+software and hardware concepts towards designing a secure intermittent
+system.  <br><br>
+
+<b>Speaker's Bio:</b> Archanaa S. Krishnan is working at Texas Instruments'
+Software R&amp;D team designing and implementing security features for wireless
+connectivity devices including the security for Texas Instruments' Wireless
+Battery Management Protocol. She received her Ph.D. in Computer Engineering
+from the Secure Embedded Systems Lab, Virginia Tech. During her Ph.D., she
+was a visiting scholar at the Vernam Lab in Worcester Polytechnique
+Institute in 2020-21. She also obtained her M.S. in Computer Engineering
+from Virginia Tech and B. Tech in Electrical and Electronics Engineering
+from Vellore Institute of Technology.  <br><br>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="beerr">BEERR: Bench of Embedded system Experiments for Reproducible
+Research</h3>
+
+<b>Authors:</b> Paul Olivier, Huy Ngo Xuan and
+Aurélien Francillon <br><br>
+
+<b>Abstract:</b> Reproducing experiments is a key component to further
+research and knowledge. Testbeds provide a controlled and configurable
+environment in which experiments can be conducted in a repeatable and
+observable manner. In the field of system security, and binary analysis,
+several challenges hinder reproducible research, in particular when code is
+interacting tightly with low level hardware and physical devices. In those
+conditions, dynamic analysis techniques often require the physical device
+to correctly complete (hardware-in-the-loop). In recent years many
+re-hosting techniques have been developed and evaluating their respective
+performance requires to compare them with an hardware-in-the-loop
+evaluation. However, it is challenging to share, acquire or maintain the
+original devices. <br> In this paper, we tackle this problem by proposing a
+new infrastructure, and online service called &quot;Bench of Embedded
+system Experiments for Reproducible Research&quot; (BEERR). It aims to both
+make physical devices available remotely and facilitate the setup and
+reproduction of published experiments. <br><br>
+
+<b>Paper:</b> <a
+href="../2022-papers/silm2022-beerr.pdf">silm2022-beerr.pdf</a>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="shorttalks">Short Talks and Discussion</h3>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h4 id="jo">Towards ABI Unification for Intel SGX Enclave Shielding Runtimes</h4>
+
+<b>Speaker:</b> Jo Van Bulck (KU Leuven)
+<br><br>
+
+<b>Abstract:</b> With hardware support for trusted execution, most notably
+Intel SGX, becoming widely available, recent years have seen the emergence
+of numerous shielding runtimes to transparently protect enclave
+applications in hostile environments. While this present diversity supports
+a wide range of enclave programming languages and development paradigms,
+requirements at the lowest level of the application binary interface (ABI)
+remain strikingly similar. Particularly, from the untrusted side, knowledge
+about the enclave binary layout is required for the loading and calling
+process, and, from the trusted side, small hand-written assembly stubs are
+needed on enclave entry/exit to initialize or cleanse CPU registers. <br>
+This talk and call for action analyzes the historical ABI vulnerability
+landscape and argues that there is _no_ technical reason for maintaining
+separate, often notoriously complex and vulnerable ABI code bases. Moving
+forward, we outline challenges and opportunities for a single, unified ABI
+sanitization layer that complies with best practices from software
+engineering and can be scrutinized and integrated across SGX runtimes. <br>
+&gt;&gt;&gt; <i>Slides:</i> <a
+href="../2022-papers/silm2022-slides-jo.pdf">silm2022-jo.pdf</a> <br><br>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h4 id="lesly">Towards Secure Speculation for the Constant-Time Policy</h4>
+
+<b>Speaker:</b> Lesly-Ann Daniel (KU Leuven)
+<br><br>
+
+<b>Abstract:</b> Speculative execution is important for processor
+performance but enables speculative execution attacks that undermine
+software-enforced security properties, such as constant-time. Recently,
+hardware-software contracts have been proposed as a way to formally reason
+about hardware-based countermeasures and to enable splitting the
+responsibility of ensuring security between hardware and software. An
+interesting hardware-software co-design would be to let the enforcement of
+vanilla constant-time up to the developers and guarantee in hardware that
+speculative execution does not leak secrets. This co-design, which we call
+secure speculation for the constant-time policy, ensures that vanilla
+constant-time programs can be securely executed on a speculative
+out-of-order processor. <br> In this talk, we discuss a form of hardware
+taint-tracking mechanism that tracks secrets in the processor pipeline, and
+ensures that they do not influence the microarchitectural state during
+speculative execution (à la ConTExT or SpectreGuard). We present a
+work-in-progress formalization of such a taint tracking mechanism and show
+that it provides secure speculation for the constant-time policy under a
+broad class of speculation mechanisms, covering all known Spectre attacks,
+even including load value injection (LVI) attacks. We implement this
+countermeasure in a prototype processor, and propose a first feasibility
+evaluation regarding its costs and benefits. <br> &gt;&gt;&gt;
+<i>Slides:</i> <a
+href="../2022-papers/silm2022-slides-lesly.pdf">silm2022-lesly.pdf</a> <br><br>
+
+

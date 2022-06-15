@@ -37,9 +37,6 @@ navigation:
   url: /submission
 - text: Program
   url: /program
-  subfolderitems:
-    - text: Program
-      url: /program
 - text: Registration
   url: /registration
 - text: Past Events
