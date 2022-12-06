@@ -14,6 +14,7 @@ spelling: ${TEXFILES}
 
 clean:
 	latexmk -C -pdf main.tex
+	rm -f *.tex.bak *.txt.bak
 
 distclean: clean
 	rm -f main.pdf
