@@ -1,0 +1,416 @@
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{article} % A4 paper and 11pt font size
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{paralist}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{blindtext} %for enumerations
+\usepackage{tabularx}
+\usepackage{tabto}
+\usepackage{boldline}
+
+\usepackage{verbatim}
+\usepackage{etoolbox}
+\usepackage{todonotes}
+\usepackage{nth}
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[]{hyperref}  %link color
+
+%table layout to the right
+%\usepackage[labelfont=bf]{caption}
+%\captionsetup[table]{labelsep=space,justification=raggedright,singlelinecheck=off}
+%\captionsetup[figure]{labelsep=quad}
+
+%\usepackage{sectsty} % Allows customizing section commands
+%\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+\setlength\parskip{1pt}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{authblk}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of heig
+\title{\vspace{-0.5cm}SILM Workshop on Security of Software/Hardware Interfaces}
+\date{}
+% \author{Guillaume Hiet, Pierre Wilke, Frédéric Besson, Benoît Montagu, Pascal Cotret} % Your name
+
+\author{Guillaume Hiet}
+\affil{CIDRE team, CentraleSupélec/Inria, IRISA, France}
+
+\author{Jan Tobias M\"uhlberg}
+\affil{imec-DistriNet, KU Leuven, Belgium}
+
+
+
+\newcommand\etal{\emph{et al.}\xspace}
+\newcommand\eg{\emph{e.g.}\xspace}
+\newcommand\ie{\emph{i.e.}\xspace}
+
+\begin{document}
+\maketitle % Print the title
+
+
+
+%\begin{abstract}
+
+%\end{abstract}
+\begin{center}
+ \textbf{Contacts}:  \url{guillaume.hiet@centralesupelec.fr},
+\url{jantobias.muehlberg@cs.kuleuven.be}
+\end{center}
+
+\noindent This is a proposal for a \emph{full-day} EuroS\&P 2022 workshop,
+preferably to be held before the main conference, on \emph{June 05,
+2022}.
+
+\section{Aim, scope and context}
+%    Workshop title
+%    Aim and scope
+\subsection{Context and past events}
+
+The security of software and hardware components used to be considered as
+different problems and have been studied by distinct scientific
+communities. However, it is increasingly important to combine both software
+and hardware aspects of computer science to deal with new software attacks
+that can be launched remotely and do not require any physical access to the
+device. This emphasizes the need to study both the attack and the defense
+aspects of the security of software/hardware interfaces.
+
+This poses several challenges. First, hardware platforms tend to be more
+and more complex and the behavior specifications of the different hardware
+components are not always publicly available. Such specifications can also
+be incomplete, incorrect, or imprecise. Thus, different approaches have to
+be proposed by researchers to recover the expected behavior or the state of
+hardware components.
+
+Another important challenge is to assess the security level of these
+hardware platforms against software attacks. The study of existing and new
+types of vulnerabilities in hardware platforms is crucial. Analyzing 
+software attacks that can use such vulnerabilities is also important to
+evaluate their real-world feasibility and impact.
+
+As a third pilar, the study of defense mechanisms is also fundamental to
+building secure systems. Modern platforms tend to embed more and more
+security mechanisms in hardware components. This raises interesting
+questions such as: What type of security mechanisms could be implemented in
+hardware platforms at an acceptable cost? What are precisely the security
+properties guaranteed by such mechanisms? Software countermeasures can also
+be used in systems and applications executed on the hardware platform to
+protect them against software attacks exploiting hardware vulnerabilities.
+
+Guillaume Hiet, the first author of this proposal organized a thematic
+research semester on these topics\footnote{\url{https://silm.inria.fr/}},
+called SILM hereafter. This semester is funded by the
+DGA\footnote{\url{https://www.defense.gouv.fr/dga}}, the Government Defence
+procurement and technology agency. It is  operated by
+Inria\footnote{\url{https://www.inria.fr/en/}}, the French national
+research institute for the digital sciences, on behalf of the partners of
+the PEC (\textit{Pôle d'Excellence
+Cyber})\footnote{\url{https://www.pole-excellence-cyber.org/presentation-du-pole/pole-dexcellence-cyber-at-a-glance/}}
+General Partnership Agreement. The PEC is a French cluster of governmental,
+industrial and academic partners on cyber-security.
+
+The SILM thematic semester is dedicated to the security of
+software/hardware interfaces and we focus more particularly on the three
+following axes:
+
+\begin{enumerate}
+%
+    \item Analyzing the behavior and the state of hardware components
+using, e.g. trace mechanisms, fuzzing, reverse-engineering techniques, or
+side channel analyses;
+%
+    \item Studying the hardware vulnerabilities and the software attacks
+that can exploit them: e.g. side-channels, fault injections, or
+exploitation of unspecified behavior;
+%
+    \item Detecting and preventing software attacks using dedicated
+hardware components. Proposing software countermeasures to protect from
+hardware vulnerabilities.
+%
+\end{enumerate}
+
+In the context of this semester, we have already organized different events
+on these topics:
+%
+\begin{itemize}
+%
+    \item A SILM Summer School (July 8-12, 2019 ):
+\url{https://silm-school.inria.fr/}
+%
+    \item A \nth{1} edition of the SILM Workshop (November, 2019):
+\url{https://silm-workshop.inria.fr/}
+%
+    \item A \nth{2} edition of the SILM Workshop (September 2020, with
+EuroS\&P): \\
+\url{https://silm-workshop-2020.inria.fr/}
+%
+    \item A \nth{3} edition of the SILM Workshop (September 2021 with
+EuroS\&P, together
+with Jan Tobias M\"uhlberg): \\
+\url{https://silm-workshop-2021.inria.fr/}
+%
+    \item A regular seminar: \url{https://silm.inria.fr/silm-seminar/}
+%
+\end{itemize}
+
+The first edition of the SILM Workshop was organized during a more general
+event, the European Cyber Week\footnote{\url{https://www.european-cyber-week.eu/}}.
+The \nth{2} and \nth{3} edition were co-localized with IEEE Euro S\&P 2020. 
+% 
+The summer school, the seminar and the first edition of the SILM workshop
+were organized in Rennes, France. Attending those events was free of
+charge. The \nth{2} and \nth{3} edition of the SILM workshop were organized as
+online-events with IEEE Euro S\&P.
+
+The programs of the events are available on their respective websites. We
+also published the slides and the video recordings of the presentations on
+our websites, if the speakers allowed us to do that. All the presentations
+have been given by invited speakers from academia, governmental agencies
+and industry. The number of participants was the following:
+%
+\begin{itemize}
+%
+    \item SILM School : 45 to 70 participants depending on the sessions (45
+participants were registered for the whole event, including the labs),
+including 13 invited speakers;
+%
+    \item \nth{1} edition of the SILM Workshop: 76 participants, including
+12 invited speakers.
+%
+    \item \nth{2} edition of the SILM Workshop: 17 participants, including
+2 invited speakers.
+%
+    \item \nth{3} edition of the SILM Workshop: $\approx$ 25 participants,
+incl. 3 invited speakers and 2 extra panelists.
+%
+\end{itemize}
+
+We would like to organize a \nth{4} edition of the SILM workshop, again
+co-located with EuroS\&P in cyber-security. We would like to open this new
+event on new unpublished and ongoing work. This will be for example an
+opportunity for young researchers to present their ongoing work.
+
+\subsection{Aim and scope of the proposed workshop}
+
+The purpose of the SILM workshop is to share experience, tools and
+methodology to handle security in software/hardware interfaces. On one
+hand, we need to better assess the security guarantees provided by existing
+hardware architectures against software attacks, especially attacks against
+micro-architecture. This can be achieved by identifying new vulnerabilities
+using reverse engineering, fuzzing or other attack approaches. On the other
+hand, we also need to propose new architectures offering a better
+resilience against software attacks. These architectures should rely on
+hardware-based security mechanisms to protect the software stack. One of
+the challenges is to formally specify and verify the security guarantees
+offered by such architectures.
+
+The goal of this \nth{4} edition of the SILM workshop is to provide a forum
+for  researchers and practitioners from academia, industry and government
+that work on the security of software/hardware interfaces.
+
+According to the audience of the previous workshops and events organized
+during the SILM semester, we expect 20 to 40 participants, in particular if
+we would be able to hold a physical meeting in Genoa.
+
+For the last edition of the SILM workshop, we received 7 submissions and we
+accepted one full paper (10 pages) and four short paper (6 pages). We also
+had two invited speakers.
+
+%    Past history of the workshop, if any, including the number of submissions, number of accepted papers, and number of registered attendees for the most recent edition of the workshop, and last year’s website
+% 
+
+\section{Format}
+
+We would like to organize a one day event mixing presentation from invited
+speakers, regular research papers and short
+papers/work-in-progress/industry experience reports. The precise format
+will depend on the number of submissions but we target the following
+format:
+%
+\begin{itemize}
+    \item 3 invited speakers (45 minutes)
+    \item 2 full research papers (25 minutes)
+    \item 4 short presentations (15 minutes)
+    \item 1 panel debate (50 minutes)
+\end{itemize}
+
+Depending on the submissions, we could accept more research papers and
+fewer short presentations. Expenses not covered by the support of Euro S\&P
+will be covered by the budget of the SILM thematic semester.
+
+The proposed agenda is the following one:
+%
+\begin{itemize}
+    \item 08:30 - 08:45 : Registration
+    \item 08:45 - 09:00 : Opening remarks
+    \item 09:00 - 10:00 : Keynote
+    \item 10:00 - 10:30 : Coffee break
+    \item 10:30 - 12:30 : Presentations
+    \item 12:30 - 14:00 : Lunch
+    \item 14:00 - 15:00 : Keynote
+    \item 15:00 - 16:00 : Panel debate
+    \item 16:00 - 16:30 : Coffee break
+    \item 16:30 - 17:30 : Keynote
+    \item 17:30 - 18:00 : Closing remarks
+\end{itemize}
+%
+Of course, we will adapt this agenda depending on the local organization constraints.
+
+\section{Reviewing and publication}
+
+We would like to propose two categories of submissions:
+%
+\begin{itemize}
+%
+    \item Regular papers describing fully developed work and complete
+results (10 pages, references included, IEEE format);
+%
+    \item Short papers, position papers, industry experience reports,
+work-in-progress submissions (6 pages, references included, IEEE format)
+%
+\end{itemize}
+
+All papers should be in English and describe original work that has not
+been previously published or submitted elsewhere. The submission category
+should be clearly indicated. All submissions will be fully reviewed by
+members of the Program Committee.
+
+We expect between 10 and 20 submissions for SILM 2022. Each submission will
+be reviewed by three different members of the PC.
+Papers will appear in IEEE Xplore in a companion volume to the regular Euro
+S\&P proceedings.
+
+%    Expected number of submissions, paper length (in IEEE conference proceedings format), and number of attendees
+%    Plan for the review process and the publication of proceedings
+
+\section{Organization}
+%    Program chair(s), and if available, tentative program and organization committees
+%    Biographical sketch for each main organizer, describing relevant qualifications in research and conference/workshop organizing experience
+
+\subsection{Organization Committee}
+
+The Organization Committee will be chaired by Guillaume Hiet and Jan Tobias
+M\"uhlberg.
+
+\emph{Guillaume Hiet}\footnote{\url{http://guillaume.hiet.fr/}} is an
+Assistant Professor at CentraleSupélec and a member of the IRISA/Inria
+CIDRE research team in Rennes Brittany, France. Prior to that he was a
+computer security expert at AMOSSYS SAS, a French security consulting
+company, from 2008 to 2010. He holds a PhD from Rennes 1 University, a
+Diplôme d'Ingénieur (MEng) and a Master Recherche (MSc) from Supélec as
+well as a Diplôme d'Ingénieur from ENSAM. He teaches cyber-security at
+CentraleSupélec and in other institutions. His research interests are in
+network and computer security, with a focus on security monitoring. He is
+particularly interested in the security of low-level components such as OS,
+firmware and hardware. He was involved in the PC of RAID 2011 and RAID 2012
+security conference. He is the chair holder of the SILM thematic semester.
+
+\emph{Jan Tobias
+M\"uhlberg}\footnote{\url{https://distrinet.cs.kuleuven.be/people/JanTobiasMuhlberg}}
+is a Research Manager for Embedded Systems Security at imec-DistriNet at
+the Department of Computer Science of KU Leuven (BE). He is active in the
+fields of embedded systems security, hardware/software co-design for
+security, verification and validation of software systems. Tobias is
+particularly interested in security architectures for safety-critical
+embedded systems and for the Internet of Things, and in the concept of
+sustainability in the information and communications technology,
+specifically in the context of security and privacy. Before joining
+DistriNet he worked as a researcher at the University of Bamberg (DE),
+obtained his Ph.D. from the University of York (UK) and worked as a
+researcher at the University of Applied Sciences in Brandenburg (DE), where
+he also obtained his Masters degree. Tobias has been a co-chair of SILM
+2021, is a co-organiser of the SICT Summer School (since 2020), the
+QA\&Test conferences (since 2018), and several seminar series at KU Leuven.
+
+\subsection{Program Committee}
+
+We are working on the composition of the Program Committee. We currently
+strive to increase the geographic distribution and diversity of this
+workshop's PC and the invited speakers. As of now we have contacted the
+following distinguished researchers in the field, most of whom have
+accepted to be part of the Program Committee of this workshop:
+
+%Invite:
+%Alasdair Armstrong, Cambridge
+%David Goltzsche (Braunschweig) -> https://www.doc.ic.ac.uk/~vsartako/
+%someone from the Robert Watson/Simon Moore group (Cambridge)
+%Shweta Shinde or Srdjan Capkun (ETH)
+
+\begin{itemize}
+    \item Guillaume Bouffard, ANSSI
+    \item Pascal Cotret, ENSTA Bretagne
+    \item Damien Couroussé, CEA
+    \item Chris Dalton, HP Labs
+    \item{Lesly-Ann Daniel, KU Leuven}
+    \item Lucas Davi, University of Duisburg-Essen
+    \item Karine Heydemann, LIP6
+    \item Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
+    \item Vianney Lapôtre, Univ. South Brittany
+    \item Jan Tobias Mühlberg, KU Leuven (Co-Chair)
+    \item Cristofaro Mune, Raelize B.V.
+    \item Simon Rokicki, ENS Rennes
+    \item Volker Stolz, HVL
+    \item{Marcus V\"olp, Uni Luxembourgh}
+    \item Pierre Wilke, CentraleSupélec/Inria
+    \item Yuval Yarom, University of Adelaide and Data61
+%    \item Guy Gogniat, Univ. South Brittany
+%    \item Jean-Louis Lanet, Inria
+%    \item Yves-Alexis Perez, ANSSI
+%    \item Kaveh Razavi,  ETH Zürich 
+%    \item Jan Reineke, Saarland University
+%    \item Erven Rohou, Inria
+%    \item André Seznec, Inria
+%    \item Arnaud Tisserand, CNRS
+%    \item Frédéric Tronel, CentraleSupélec/Inria
+%    \item Yossi Oren, Ben-Gurion University
+\end{itemize}
+
+
+\section{Draft CFP}
+%   Draft CFP articulating the scope and topics covered by the workshop
+
+\verbatiminput{cfp.txt}
+
+
+\end{document}
+
+
