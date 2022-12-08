@@ -5,6 +5,7 @@ Guillaume Bouffard <Guillaume.Bouffard@ssi.gouv.fr>
 Pascal Cotret <pascal.cotret@gmail.com>
 Damien Couroussé <damien.courousse@cea.fr>
 Chris Dalton <cid@hp.com>
+Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
 Lucas Davi <lucas.davi@uni-due.de>
 Karine Heydemann <karine.heydemann@lip6.fr>
 Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
@@ -14,5 +15,7 @@ Kaveh Razavi <kaveh@ethz.ch>
 Erven Rohou <erven.rohou@inria.fr>
 Simon Rokicki <simon.rokicki@irisa.fr>
 Volker Stolz <Volker.Stolz@hvl.no>
+Marcus Voelp <marcus.voelp@uni.lu>
 Pierre Wilke <pierre.wilke@centralesupelec.fr>
 Yuval Yarom <yval@cs.adelaide.edu.au>
+

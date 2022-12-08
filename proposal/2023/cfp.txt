@@ -1,15 +1,15 @@
 
-*******************************************************************************
+******************************************************************************
 
                           Call for Paper
 
             SILM Workshop on Software/Hardware Security
                   https://silm-workshop.github.io/
-  Co-located with Euro S&P 2022: http://www.ieee-security.org/TC/EuroSP2022/
+  Co-located with Euro S&P 2023: http://www.ieee-security.org/TC/EuroSP2023/
 
-                Monday, June 06 2022, Genoa (Italy)
+           Monday, July 03 2023, Delft (The Netherlands)
 
-*******************************************************************************
+******************************************************************************
 
 It is becoming increasingly important to combine software and hardware
 aspects to take new software attacks into account. For example, hardware
@@ -33,7 +33,7 @@ should rely on hardware-based security mechanisms to protect the software
 stack. One of the challenges is to formally specify and verify the security
 guarantees offered by such architectures.
 
-The goal of this third edition of the SILM workshop is to provide a forum
+The goal of this 5th edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
 that work on the security of software/hardware interfaces.
 
@@ -53,10 +53,10 @@ that work on the security of software/hardware interfaces.
 
 ==== Important Dates
 
- - Submission: March 18, 2022 -- 11:59pm AoE
- - Author Notification: April 08, 2022
- - Camera Ready Version: April 15, 2022
- - Workshop: June 06, 2022
+ - Submission: March 02, 2023 -- 11:59pm AoE
+ - Author Notification: April 10, 2023
+ - Camera Ready Version: May 08, 2022
+ - Workshop: July 03, 2022
 
 ==== Submission and Publication
 
