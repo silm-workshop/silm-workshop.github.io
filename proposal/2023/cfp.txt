@@ -80,7 +80,11 @@ not want your *short paper* to appear in the proceedings.
 ==== Program Chairs
 
  - Guillaume Hiet, IRISA, CentraleSupelec/Inria, France
- - Jan Tobias Muehlberg, DistriNet, KU Leuven, Belgium
+ - Jan Tobias Muehlberg, imec-DistriNet, KU Leuven, Belgium
+
+=== Publicity
+
+ - Merve Guelmez, Ericsson Research/KU Leuven, Sweden/Belgium
 
 ==== Program Committee
 
@@ -90,7 +94,7 @@ not want your *short paper* to appear in the proceedings.
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
- - Jan Tobias Mühlberg, KU Leuven (Co-Chair)
+ - Jan Tobias Muehlberg, KU Leuven (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
  - Simon Rokicki, ENS Rennes
  - Volker Stolz, HVL
