@@ -55,8 +55,8 @@ that work on the security of software/hardware interfaces.
 
  - Submission: March 02, 2023 -- 11:59pm AoE
  - Author Notification: April 10, 2023
- - Camera Ready Version: May 08, 2022
- - Workshop: July 03, 2022
+ - Camera Ready Version: May 08, 2023
+ - Workshop: July 03, 2023
 
 ==== Submission and Publication
 
