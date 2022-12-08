@@ -19,7 +19,7 @@ physical access to the targeted hardware platform. On the other hand,
 hardware features can be used to better detect and respond to traditional
 software attacks, such as memory corruption. Therefore, it is necessary to
 study the security of software/hardware interfaces, both in terms of
-attacks and defenses.
+attacks and defences.
 
 The purpose of the SILM workshop is to share experiences, tools, and
 methodologies to handle security in software/hardware interfaces. On the
@@ -36,6 +36,16 @@ guarantees offered by such architectures.
 The goal of this 5th edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
 that work on the security of software/hardware interfaces.
+
+=== Special Theme for SILM 2023
+
+As a special theme for SILM 2023, we solicit submissions that present novel
+research that develops or relies on hardware/software interfaces to improve
+security and dependability in the telecommunications sector. In particular,
+work that aims at 5G, edge and cloud scenarios where strict requirements on
+bandwidth, latency, and availability need to be met, are of special
+interest for SILM this year. Submissions must be within the general scope
+of SILM 2023 as stated above.
 
 ==== Topics of interest include, but are not limited to the following
 
@@ -91,6 +101,7 @@ not want your *short paper* to appear in the proceedings.
  - Pascal Cotret, ENSTA Bretagne
  - Chris Dalton, HP Labs
  - Lesly-Ann Daniel, KU Leuven
+ - Merve Guelmez, Ericsson Research/KU Leuven (Publicity)
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
