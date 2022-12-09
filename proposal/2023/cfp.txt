@@ -37,7 +37,7 @@ The goal of this 5th edition of the SILM workshop is to provide a forum
 for researchers and practitioners from academia, industry, and government
 that work on the security of software/hardware interfaces.
 
-=== Special Theme \SILMYear{}: SILM for Telecommunications
+=== Special Theme 2023: SILM for Telecommunications
 
 As a special theme for SILM 2023, we solicit submissions that present novel
 research that develops or relies on hardware/software interfaces to improve
