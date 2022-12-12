@@ -108,6 +108,7 @@ not want your *short paper* to appear in the proceedings.
  - Clémentine Maurice, Inria
  - Jan Tobias Muehlberg, KU Leuven (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
+ - Kaveh Razavi, ETH Zurich
  - Simon Rokicki, ENS Rennes
  - Volker Stolz, HVL
  - Marcus Voelp, Uni Luxembourgh

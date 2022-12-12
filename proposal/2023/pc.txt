@@ -1,21 +1,27 @@
 Guillaume Hiet <guillaume.hiet@centralesupelec.fr>
 Jan Tobias Muehlberg <jantobias.muehlberg@kuleuven.be>
 
-Guillaume Bouffard <Guillaume.Bouffard@ssi.gouv.fr>
 Pascal Cotret <pascal.cotret@gmail.com>
-Damien Couroussé <damien.courousse@cea.fr>
 Chris Dalton <cid@hp.com>
-Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
-Lucas Davi <lucas.davi@uni-due.de>
-Karine Heydemann <karine.heydemann@lip6.fr>
-Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
-Ronan Lashermes <ronan.lashermes@inria.fr>
++ Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
++ Merve Guelmez <merve.turhan@ericsson.com>
++ Karine Heydemann <karine.heydemann@lip6.fr>
++ Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
++ Clémentine Maurice <clementine.maurice@inria.fr>
 Cristofaro Mune <cristofaro@raelize.com>
-Kaveh Razavi <kaveh@ethz.ch>
-Erven Rohou <erven.rohou@inria.fr>
++ Kaveh Razavi <kaveh@ethz.ch>
 Simon Rokicki <simon.rokicki@irisa.fr>
-Volker Stolz <Volker.Stolz@hvl.no>
++ Volker Stolz <Volker.Stolz@hvl.no>
 Marcus Voelp <marcus.voelp@uni.lu>
 Pierre Wilke <pierre.wilke@centralesupelec.fr>
-Yuval Yarom <yval@cs.adelaide.edu.au>
++ Yuval Yarom <yval@cs.adelaide.edu.au>
+
+
+# --- old ---
+
+Guillaume Bouffard <Guillaume.Bouffard@ssi.gouv.fr>
+Damien Couroussé <damien.courousse@cea.fr>
+Lucas Davi <lucas.davi@uni-due.de>
+Ronan Lashermes <ronan.lashermes@inria.fr>
+Erven Rohou <erven.rohou@inria.fr>
 
