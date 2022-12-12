@@ -105,6 +105,7 @@ not want your *short paper* to appear in the proceedings.
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
+ - Clémentine Maurice, Inria
  - Jan Tobias Muehlberg, KU Leuven (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
  - Simon Rokicki, ENS Rennes
