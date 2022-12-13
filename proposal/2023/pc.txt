@@ -2,7 +2,7 @@ Guillaume Hiet <guillaume.hiet@centralesupelec.fr>
 Jan Tobias Muehlberg <jantobias.muehlberg@kuleuven.be>
 
 Pascal Cotret <pascal.cotret@gmail.com>
-Chris Dalton <cid@hp.com>
++ Chris Dalton <cid@hp.com>
 + Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
 + Merve Guelmez <merve.turhan@ericsson.com>
 + Karine Heydemann <karine.heydemann@lip6.fr>
