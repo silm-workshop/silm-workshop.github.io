@@ -8,7 +8,7 @@ Pascal Cotret <pascal.cotret@gmail.com>
 + Karine Heydemann <karine.heydemann@lip6.fr>
 + Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
 + Clémentine Maurice <clementine.maurice@inria.fr>
-Cristofaro Mune <cristofaro@raelize.com>
++ Cristofaro Mune <cristofaro@raelize.com>
 + Kaveh Razavi <kaveh@ethz.ch>
 Simon Rokicki <simon.rokicki@irisa.fr>
 + Volker Stolz <Volker.Stolz@hvl.no>
