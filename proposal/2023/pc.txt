@@ -11,6 +11,7 @@ Pascal Cotret <pascal.cotret@gmail.com>
 + Cristofaro Mune <cristofaro@raelize.com>
 + Kaveh Razavi <kaveh@ethz.ch>
 Simon Rokicki <simon.rokicki@irisa.fr>
++ Shweta Shinde <shweta.shivajishinde@inf.ethz.ch>
 + Volker Stolz <Volker.Stolz@hvl.no>
 Marcus Voelp <marcus.voelp@uni.lu>
 Pierre Wilke <pierre.wilke@centralesupelec.fr>
