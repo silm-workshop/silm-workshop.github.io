@@ -92,6 +92,8 @@ not want your *short paper* to appear in the proceedings.
  - Guillaume Hiet, IRISA, CentraleSupelec/Inria, France
  - Jan Tobias Muehlberg, ULB/KU Leuven, Belgium
 
+Contact email: silm-workshop@inria.fr
+
 === Publicity
 
  - Merve Guelmez, Ericsson Research/KU Leuven, Sweden/Belgium
