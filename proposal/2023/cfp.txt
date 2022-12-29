@@ -90,7 +90,7 @@ not want your *short paper* to appear in the proceedings.
 ==== Program Chairs
 
  - Guillaume Hiet, IRISA, CentraleSupelec/Inria, France
- - Jan Tobias Muehlberg, imec-DistriNet, KU Leuven, Belgium
+ - Jan Tobias Muehlberg, ULB/KU Leuven, Belgium
 
 === Publicity
 
