@@ -13,7 +13,7 @@ Jan Tobias Muehlberg <jantobias.muehlberg@kuleuven.be>
 Simon Rokicki <simon.rokicki@irisa.fr>
 + Shweta Shinde <shweta.shivajishinde@inf.ethz.ch>
 + Volker Stolz <Volker.Stolz@hvl.no>
-Marcus Voelp <marcus.voelp@uni.lu>
++ Marcus Voelp <marcus.voelp@uni.lu>
 + Pierre Wilke <pierre.wilke@centralesupelec.fr>
 + Yuval Yarom <yval@cs.adelaide.edu.au>
 
