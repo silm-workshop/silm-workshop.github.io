@@ -108,10 +108,11 @@ Contact email: silm-workshop@inria.fr
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
  - Clémentine Maurice, Inria
- - Jan Tobias Muehlberg, KU Leuven (Co-Chair)
+ - Jan Tobias Muehlberg, ULB/KU Leuven (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
  - Kaveh Razavi, ETH Zurich
  - Simon Rokicki, ENS Rennes
+ - Shweta Shinde, ETH Zurich
  - Volker Stolz, HVL
  - Marcus Voelp, Uni Luxembourgh
  - Pierre Wilke, CentraleSupélec/Inria
