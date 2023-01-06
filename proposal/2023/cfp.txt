@@ -119,7 +119,7 @@ Contact email: silm-workshop@inria.fr
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
- - Clémentine Maurice, Inria
+ - Clémentine Maurice, CNRS
  - Jan Tobias Muehlberg, ULB/KU Leuven (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
  - Kaveh Razavi, ETH Zurich

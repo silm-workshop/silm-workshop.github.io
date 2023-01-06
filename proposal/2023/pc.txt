@@ -1,21 +1,20 @@
 Guillaume Hiet <guillaume.hiet@centralesupelec.fr>
-Jan Tobias Muehlberg <jantobias.muehlberg@kuleuven.be>
-
-+ Pascal Cotret <pascal.cotret@gmail.com>
-+ Chris Dalton <cid@hp.com>
-+ Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
-+ Merve Guelmez <merve.turhan@ericsson.com>
-+ Karine Heydemann <karine.heydemann@lip6.fr>
-+ Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
-+ Clémentine Maurice <clementine.maurice@inria.fr>
-+ Cristofaro Mune <cristofaro@raelize.com>
-+ Kaveh Razavi <kaveh@ethz.ch>
-+ Simon Rokicki <simon.rokicki@irisa.fr>
-+ Shweta Shinde <shweta.shivajishinde@inf.ethz.ch>
-+ Volker Stolz <Volker.Stolz@hvl.no>
-+ Marcus Voelp <marcus.voelp@uni.lu>
-+ Pierre Wilke <pierre.wilke@centralesupelec.fr>
-+ Yuval Yarom <yval@cs.adelaide.edu.au>
+Jan Tobias Muehlberg <jan.tobias.muehlberg@ulb.be>
+Pascal Cotret <pascal.cotret@gmail.com>
+Chris Dalton <cid@hp.com>
+Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
+Merve Guelmez <merve.turhan@ericsson.com>
+Karine Heydemann <karine.heydemann@lip6.fr>
+Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
+Clémentine Maurice <clementine.maurice@inria.fr>
+Cristofaro Mune <cristofaro@raelize.com>
+Kaveh Razavi <kaveh@ethz.ch>
+Simon Rokicki <simon.rokicki@irisa.fr>
+Shweta Shinde <shweta.shivajishinde@inf.ethz.ch>
+Volker Stolz <Volker.Stolz@hvl.no>
+Marcus Voelp <marcus.voelp@uni.lu>
+Pierre Wilke <pierre.wilke@centralesupelec.fr>
+Yuval Yarom <yval@cs.adelaide.edu.au>
 
 
 # --- old ---
