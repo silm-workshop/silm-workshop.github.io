@@ -1,14 +1,12 @@
 
 ******************************************************************************
+                          Call for Papers
 
-                          Call for Paper
+        SILM Workshop on the Security of Software/Hardware Interfaces
+               Monday, July 03 2023, Delft (The Netherlands)
+                    https://silm-workshop.github.io/
 
-            SILM Workshop on Software/Hardware Security
-                  https://silm-workshop.github.io/
-  Co-located with Euro S&P 2023: http://www.ieee-security.org/TC/EuroSP2023/
-
-           Monday, July 03 2023, Delft (The Netherlands)
-
+ Co-located with Euro S&P 2023: http://www.ieee-security.org/TC/EuroSP2023/
 ******************************************************************************
 
 It is becoming increasingly important to combine software and hardware
