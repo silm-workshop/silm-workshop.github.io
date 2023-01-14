@@ -126,5 +126,5 @@ Contact email: silm-workshop@inria.fr
  - Volker Stolz, HVL
  - Marcus Voelp, Uni Luxembourgh
  - Pierre Wilke, CentraleSupélec/Inria
- - Yuval Yarom, University of Adelaide and Data61
+ - Yuval Yarom, University of Adelaide
 
