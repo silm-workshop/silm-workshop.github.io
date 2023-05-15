@@ -32,9 +32,11 @@ black-box binary analysis system DRAKVUF.
   Besson, Guy Gogniat, Guillaume Hiet, Vianney Lapôtre and Pierre Wilke.
 Work in Progress: Thwarting Timing Attacks in Microcontrollers using
 Fine-grained Hardware Protections
+    - silm2023-cache-protection.pdf
 - Nikolaos Foivos Polychronou, Pierre-Henri Thevenon, Maxime Puys and
   Vincent Beroulle. A Hybrid Solution for Constraint Devices to Detect
 Microarchitectural Attacks
+    - silm2023-constrained.pdf
 - Anis Fellah Touta, Lilian Bossuet and Carlos Andres Lara-Nino. Combined
   Internal Attacks on SoC-FPGAs: Breaking AES with Remote Power Analysis
 and Frequency-based Covert Channels
@@ -42,6 +44,7 @@ and Frequency-based Covert Channels
   Learning-Based Acoustic Side Channel Attack on Keyboards
 - Vincent Giraud and Guillaume Bouffard. [Regular paper] Faulting original
   McEliece’s implementations is possible -- How to mitigate this risk?
+    - silm2023-mceliece.pdf
 
 **Conditionally Accepted with Shepherding**
 
@@ -50,7 +53,9 @@ and Frequency-based Covert Channels
 dedicated to virtual machine introspection
 - Lilian Bossuet, Vincent Grosso and Carlos Andres Lara Nino. Emulating
   Side Channel Attacks on gem5: Lessons learned
+    - silm2023-gem5.pdf
 - Fatih Durmaz, Nureddin Kamadan, Melih Taha Öz, Musa Unal, Arsalan Javeed,
   Cemal Yilmaz and Erkay Savas. TimeInspector: A Static Analysis Approach
 for Detecting Timing Attacks
+    - silm2023-timeinspector.pdf
 
