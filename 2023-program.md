@@ -40,8 +40,10 @@ Microarchitectural Attacks
 - Anis Fellah Touta, Lilian Bossuet and Carlos Andres Lara-Nino. Combined
   Internal Attacks on SoC-FPGAs: Breaking AES with Remote Power Analysis
 and Frequency-based Covert Channels
+    - 
 - Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad. A Practical Deep
   Learning-Based Acoustic Side Channel Attack on Keyboards
+    - 
 - Vincent Giraud and Guillaume Bouffard. [Regular paper] Faulting original
   McEliece’s implementations is possible -- How to mitigate this risk?
     - silm2023-mceliece.pdf
@@ -51,6 +53,7 @@ and Frequency-based Covert Channels
 - Lionel Hemmerlé, Jean-Christophe Prévotet, Guillaume Hiet, Frédéric
   Tronel and Pierre Wilke. Conception and implementation of a language
 dedicated to virtual machine introspection
+    - silm2023-introspection.pdf
 - Lilian Bossuet, Vincent Grosso and Carlos Andres Lara Nino. Emulating
   Side Channel Attacks on gem5: Lessons learned
     - silm2023-gem5.pdf
