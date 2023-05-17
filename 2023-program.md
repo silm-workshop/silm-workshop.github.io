@@ -40,7 +40,7 @@ Microarchitectural Attacks
 - Anis Fellah Touta, Lilian Bossuet and Carlos Andres Lara-Nino. Combined
   Internal Attacks on SoC-FPGAs: Breaking AES with Remote Power Analysis
 and Frequency-based Covert Channels
-    - 
+    - silm2023-soc-aes.pdf
 - Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad. A Practical Deep
   Learning-Based Acoustic Side Channel Attack on Keyboards
     - 
