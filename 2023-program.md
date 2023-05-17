@@ -43,7 +43,7 @@ and Frequency-based Covert Channels
     - silm2023-soc-aes.pdf
 - Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad. A Practical Deep
   Learning-Based Acoustic Side Channel Attack on Keyboards
-    - 
+    - silm2023-acoustic.pdf
 - Vincent Giraud and Guillaume Bouffard. [Regular paper] Faulting original
   McEliece’s implementations is possible -- How to mitigate this risk?
     - silm2023-mceliece.pdf
