@@ -18,13 +18,13 @@ Fine-grained Hardware Protections
   Side Channel Attacks on gem5: Lessons learned
     - silm2023-gem5.pdf
 
-### 11:00 -- 11:30 | Break
+### 11:00 -- 11:30 | Coffee Break
 
 ### 11:30 -- 12:30 | Invited Talk: Sergej Proskurin
 
-### 12:30 -- 13:30 | Lunch
+### 12:30 -- 14:00 | Lunch
 
-### 13:30 -- 14:00 | Session 2: Crypto
+### 14:00 -- 15:00 | Session 2: Crypto
 
 * **full:** Vincent Giraud and Guillaume Bouffard. Faulting original
   McEliece’s implementations is possible -- How to mitigate this risk?
@@ -34,14 +34,14 @@ Fine-grained Hardware Protections
 and Frequency-based Covert Channels
     - silm2023-soc-aes.pdf
 
-### 14:00 -- 14:30 | Break
+### 15:00 -- 15:30 | Coffee Break
 
-### 14:30 -- 15:00 | The Future of SILM
+### 15:30 -- 16:00 | The Future of SILM
 
 * I want to discuss with the participants what good formats for this
   workshop are, how we can widen the community, etc.
 
-### 15:00 -- 16:30 | Session 3
+### 16:00 -- 17:30 | Session 3
 
 * **full:** Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad. A
   Practical Deep Learning-Based Acoustic Side Channel Attack on Keyboards
@@ -55,9 +55,8 @@ for Detecting Timing Attacks
 dedicated to virtual machine introspection
     - silm2023-introspection.pdf
 
-### 16:30 -- 17:00 | Break
+### 17:30 -- 18:00 | Closing, Coffee
 
-### 17:00 -- 18:00 | Lighning Talks / Free Podium
 
 ---
 
