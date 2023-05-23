@@ -3,7 +3,7 @@
 
 ### 09:00 -- 09:30 | Coffee and Introduction
 
-### 09:30 -- 11:00 | Session 1: Side Channels in Microcontrollers
+### 09:30 -- 11:00 | Session 1: Microarchitectural Attacks and Defences in Microcontrollers
 
 * **full:** Nikolaos Foivos Polychronou, Pierre-Henri Thevenon, Maxime Puys
   and Vincent Beroulle. A Hybrid Solution for Constraint Devices to Detect
@@ -24,7 +24,7 @@ Fine-grained Hardware Protections
 
 ### 12:30 -- 14:00 | Lunch
 
-### 14:00 -- 15:00 | Session 2: Crypto
+### 14:00 -- 15:00 | Session 2: Attacks and Defences for Crypto Implementations
 
 * **full:** Vincent Giraud and Guillaume Bouffard. Faulting original
   McEliece’s implementations is possible -- How to mitigate this risk?
@@ -41,7 +41,7 @@ and Frequency-based Covert Channels
 * I want to discuss with the participants what good formats for this
   workshop are, how we can widen the community, etc.
 
-### 16:00 -- 17:30 | Session 3
+### 16:00 -- 17:30 | Session 3: Side Channels, Static & Dynamic Analysis
 
 * **full:** Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad. A
   Practical Deep Learning-Based Acoustic Side Channel Attack on Keyboards
