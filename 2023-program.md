@@ -90,6 +90,9 @@ and operating system security. In the past, Sergej actively contributed to
 open source projects, including the Xen Project hypervisor and the
 black-box binary analysis system DRAKVUF.
 
+Homepage: https://www.sec.in.tum.de/i20/people/sergej-proskurin
+Twitter: @proskurinserg 
+
 
 ## Paper Presentations
 
