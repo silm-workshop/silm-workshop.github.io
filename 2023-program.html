@@ -3,6 +3,376 @@ title: Program -- SILM 2023, 2022-07-03, with <a href="https://www.ieee-security
 layout: default
 ---
 
-<br><br> We don't have a programme yet. Please <a
-href="https://silm-workshop.github.io/dates/">submit your papers</a>!
 
+<br><br>
+<table>
+<tr style="border-bottom: 1px solid #000;border-top: 1px solid #000;">
+  <th>Time</th><th>&nbsp;&nbsp;&nbsp;</th><th></th>
+</tr>
+
+<tr style="background-color:#FFF0C0;">
+  <td>09:00 - 09:30</td><td></td>
+  <td> Coffee - Introduction</td>
+</tr>
+
+<tr style="background-color:#fdf5d9;">
+  <td> 09:30 - 11:00 </td><td></td>
+  <td><b><a href="#session1">Session-1: Microarchitectural Attacks and Defences in Microcontrollers</b></a>
+    <ul>
+        <li><b><a href="#hybrid">A Hybrid Solution for Constraint Devices to Detect Microarchitectural Attacks </b></a><br>
+            Nikolaos Foivos Polychronou, Pierre-Henri Thevenon, Maxime Puys and Vincent Beroulle</li>
+        <li><b><a href="#cacheprotection">Work in Progress: Thwarting Timing Attacks in Microcontrollers using Fine-grained Hardware Protections </b></a><br> 
+            Jean-Loup Hatchikian-Houdot, Nicolas Gaudin, Pascal Cotret, Frédéric Besson, Guy Gogniat, Guillaume Hiet, Vianney Lapôtre and Pierre Wilke</li>
+        <li><b><a href="#gem5">Emulating Side Channel Attacks on gem5: Lessons learned </b></a><br> 
+            Lilian Bossuet, Vincent Grosso and Carlos Andres Lara Nino </li>
+    </ul>
+</tr>
+
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>11:00-11:30</td><td></td>
+  <td>Break (Coffee)</td>
+</tr>
+
+<tr style="background-color:#FFF0C0;">
+    <td>11:30-12:30</td><td></td>
+    <td><b><a href="#sergej">Invited Talk: Virtualization-assisted Operating System Security.  Sergej Proskurin</b></a></td>
+</tr>
+
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>12:30-14:00</td><td></td>
+  <td>Break (Lunch)</td>
+</tr>
+
+<tr style="background-color:#fdf5d9;">
+    <td> 14:00 - 15:00 </td><td></td>
+    <td><b><a href="#session2">Session-2: Attacks and Defences for Crypto Implementations</b></a>
+      <ul>
+          <li><b><a href="#mceliece">Faulting original McEliece’s implementations is possible -- How to mitigate this risk?</b></a><br>
+                Vincent Giraud and Guillaume Bouffard</li>
+          <li><b><a href="#socaes">Combined Internal Attacks on SoC-FPGAs: Breaking AES with Remote Power Analysis and Frequency-based Covert Channels </b></a><br>
+                Anis Fellah Touta, Lilian Bossuet and Carlos Andres Lara-Nino</a></li>
+      </ul>
+</tr>
+
+<tr style="background-color:#BEFFC5;border-bottom: 1px solid
+#000;border-top: 1px solid #000;">
+  <td>15:00-15:30</td><td></td>
+  <td>Break (Coffee)</td>
+</tr>
+</tr>
+<tr style="background-color:#FFF0C0;">
+    <td>15:30-16:00</td><td></td>
+    <td><b>The Future of SILM: <b>Jan Tobias Mühlberg </b></td>
+</tr>
+
+<tr style="background-color:#fdf5d9;">
+    <td> 16:30 - 17:30 </td><td></td>
+    <td><b><a href="#session3">Session-3: Side Channels, Static & Dynamic Analysis</b></a>
+      <ul>
+          <li><b><a href="#acoustic">Practical Deep Learning-Based Acoustic Side Channel Attack on Keyboards</a></b><br>
+              Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad</a></li>
+          <li><b><a href="#inspector">TimeInspector: A Static Analysis Approach for Detecting Timing Attacks</a></b><br>
+              Fatih Durmaz, Nureddin Kamadan, Melih Taha Öz, Musa Unal, Arsalan Javeed, Cemal Yilmaz and Erkay Savas</li>
+          <li><b><a href="#spection">Conception and implementation of a language dedicated to virtual machine introspection</a></b><br> 
+              Lionel Hemmerlé, Jean-Christophe Prévotet, Guillaume Hiet, Frédéric Tronel and Pierre Wilke </li>
+      </ul>
+</tr>
+
+<tr style="background-color:#FFF0C0;">
+    <td>17:30-18:00</td><td></td>
+    <td>Closing Remarks</td>
+  </tr>
+</table>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h2 id="session1"> Session-1: Microarchitectural Attacks and Defences in Microcontrollers</h2>
+
+
+<hr>
+<h3 id="constrained">A Hybrid Solution for Constraint Devices to Detect Microarchitectural Attacks</h3>
+
+<b>Authors:</b> Nikolaos Foivos Polychronou, Pierre-Henri Thevenon, Maxime Puys and Vincent Beroulle <br><br>
+
+<b>Abstract:</b> We are seeing an increase in cybersecurity attacks
+on resource-constrained systems such as the Internet of
+Things (IoT) and Industrial IoT (I-IoT) devices. Recently,
+a new category of attacks has emerged called microarchitectural
+attacks. It targets hardware units of the system such
+as the processor or memory and is often complicated if
+not impossible to remediate since it imposes modifying the
+hardware. In default of remediation, some solutions propose
+to detect these attacks. Yet, most of them are not suitable for
+embedded systems since they are based on complex machine
+learning algorithms.
+In this paper, we propose an edge-computing security
+solution for attack detection that uses a local-remote machine
+learning implementation to find an equilibrium between
+accuracy and decision-making latency while addressing the
+memory, performance, and communication bandwidth constraints
+of resource-constrained systems. We demonstrate
+effectiveness in the detection of multiple microarchitectural
+attacks such as Rowhammer or cache attacks on an embedded
+device with an accuracy of 98.75% and a FPR near
+0%. To limit the overhead on the communication bus, the
+proposed solution allows to locally classify as trusted 99%
+of the samples during normal operation and thus filtering
+them out. <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-constrained.pdf">silm2023-constrained.pdf</a>
+
+<hr>
+<h3 id="cacheprotection"> Work in Progress: Thwarting Timing Attacks in Microcontrollers using Fine-grained Hardware Protections</h3>
+
+<b>Authors:</b> Jean-Loup Hatchikian-Houdot, Nicolas Gaudin, Pascal Cotret, Frédéric Besson, Guy Gogniat, Guillaume Hiet, Vianney Lapôtre and Pierre Wilke <br><br>
+
+<b>Abstract:</b> Timing side-channels are an identified threat for
+security critical software. Existing countermeasures have a
+cost either on the hardware requirements or execution time.
+We focus on low-cost microcontrollers that have a very low
+computational capacity. Although these processors do not
+feature out-of-order execution or speculation, they remain
+vulnerable to timing attacks exploiting the varying latencies
+of ALU operations or memory accesses.
+We propose to augment the RISC-V ISA with security
+primitives that have a guaranteed timing behavior. These
+primitives allow constant time ALU operations and memory
+accesses that do not alter the state of the cache. Our ap-
+proach has a low overhead in terms of hardware cost, binary
+code size, and execution time both for the constant time
+secure program and other programs running concurrently
+on the same hardware. <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-cache-protection.pdf">silm2023-cache-protection.pdf</a>
+
+
+<hr>
+<h3 id="gem5"> Emulating Side Channel Attacks on gem5: Lessons learned </h3>
+
+<b>Authors:</b> Lilian Bossuet, Vincent Grosso and Carlos Andres Lara Nino  <br><br>
+
+<b>Abstract:</b> Side channel attacks (SCA) have the potential of
+disrupting the trust of the users on computing platforms
+and cryptographic algorithms. The main challenge in the
+design of countermeasures against such threats is that an
+evaluation of their effectiveness can only be performed
+after they have been implemented. By that point, significant
+resources would have been invested in the creation of a
+prototype. Moreover, the large volume of combinations from
+all the potential target algorithms and computing systems
+complicates a systematical analysis. It is necessary to find
+strategies to simplify and systematize the study of SCAs and
+their countermeasures. gem5 is a cycle-accurate simulator
+which offers the possibility to emulate a broad range of
+computing architectures. Beyond the functional verification,
+this tool computes multiple physical statistics from the simulated
+system. In this paper, we discuss the lessons learned
+from using gem5 to simulate SCAs on an ARM system. Our
+work shows that while there is a correlation between the data
+and the reported statistics, there are significant challenges
+that must be addressed to improve the use of gem5 for the
+emulation of physical phenomena. <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-gem5.pdf">silm2023-gem5.pdf</a>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<hr>
+<h3 id="sergej">Invited Talk: Virtualization-assisted Operating System Security</h3>
+
+<b>Speaker:</b> Sergej Proskurin <br><br>
+
+<b>Abstract:</b> Virtualization technology has undergone a paradigm shift,
+with a renewed focus on system security. This shift inspired researches to
+repurpose modern virtualization extensions to form novel
+virtualization-assisted primitives for dynamic binary analysis and
+operating system security. This talk explores the potential of
+virtualization technology for system security and how we can alleviate the
+strict separation between operating systems and virtual machine monitors to
+empower systems with advanced security primitives. <br><br>
+
+<b>Speaker's Bio:</b> Sergej Proskurin works as a Senior Security Engineer at
+BedRock Systems, specializing in virtualization-assisted operating system
+security. He received his Ph.D. in Computer Science from the Technical
+University of Munich. His research interests cover a wide range of
+low-level topics. In particular, he is passionate about operating system
+design and leveraging virtualization technology for dynamic binary analysis
+and operating system security. In the past, Sergej actively contributed to
+open source projects, including the Xen Project hypervisor and the
+black-box binary analysis system DRAKVUF.
+<br><br>
+
+
+<hr>
+<h2 id="session2"> Session-2: Attacks and Defences for Crypto Implementations</h2>
+
+
+<hr>
+<h3 id="mceliece">Faulting original McEliece’s implementations is possible -- How to mitigate this risk?</b></a><br>
+  </h3>
+
+<b>Authors:</b> Vincent Giraud and Guillaume Bouffard <br><br>
+
+<b>Abstract:</b> Private and public actors increasingly encounter
+use cases where they need to implement sensitive operations
+on mass-market peripherals for which they have little or no
+control. They are sometimes inclined to attempt this without
+using hardware-assisted equipment, such as secure elements.
+In this case, the white-box attack model is particularly
+relevant and includes access to every asset, retro-engineering,
+and binary instrumentation by attackers. At the same time,
+quantum attacks are becoming more and more of a threat
+and challenge traditional asymmetrical ciphers, which are
+treasured by private and public actors.
+The McEliece cryptosystem is a code-based public key
+algorithm introduced in 1978 that is not subject to wellknown
+quantum attacks and that could be implemented in an
+uncontrolled environment. During the NIST post-quantum
+cryptography standardization process [17], a derived candidate
+commonly referred to as classic McEliece was selected.
+This algorithm is however vulnerable to some fault injection
+attacks while a priori, this does not apply to the original
+McEliece. In this article, we thus focus on the original
+McEliece cryptosystem and we study its resilience against
+fault injection attacks on an ARM reference implementation
+[18]. We disclose the first fault injection based attack
+and we discuss on how to modify the original McEliece
+cryptosystem to make it resilient to fault injection attacks. <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-mceliece.pdf">silm2023-mceliece.pdf</a>
+
+<hr>
+<h3 id="#socaes"> Combined Internal Attacks on SoC-FPGAs: Breaking AES with Remote Power Analysis and Frequency-based Covert Channels</h3>
+
+<b>Authors:</b> Anis Fellah Touta, Lilian Bossuet and Carlos Andres Lara-Nino <br><br>
+
+<b>Abstract:</b> In recent years, the field of side-channel analysis
+has observed a revolution in the design of the attack
+methodology. Conventional approaches which require the use
+of highly specialized equipment like oscilloscopes and spectrum
+analyzers, despite highly precise, might be regarded
+as impractical in some scenarios. On the other hand, the
+use of less-accurate internal sensors which can monitor the
+power footprint of a circuit has risen in popularity. Delay
+sensors have shown promising results. These structures are
+interesting since they can be implemented from regular hardware
+resources available in most circuits. This means that
+components already available in the target platform might be
+leveraged to implement a side-channel attack. Moreover, it
+has been shown that is not necessary to have direct access to
+the platform to carry out such an attack; which implies that
+if there is a remote link such as Ethernet, an adversary might
+be able to perform Remote Power Analysis (RPA) of the
+system. So far, the main challenge for the success of this kind
+of attack is the problem of cutting and aligning the power
+traces. This is usually achieved through secondary digital
+channels which carry some trigger information. In this paper,
+we simplify the conditions for an RPA attack to take place.
+Namely, our method mitigates the need for connecting digital
+triggers to the remote sensor. We demonstrate this approach
+by performing a successful key recovery on a hardware
+implementation of AES <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-soc-aes.pdf">silm2023-soc-aes.pdf</a>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<hr>
+<h2 id="session3"> Session-3: Side Channels, Static & Dynamic Analysis</h2>
+<hr>
+
+<h3 id="acoustic">Practical Deep Learning-Based Acoustic Side Channel Attack on Keyboards</b></a><br>
+  </h3>
+
+<b>Authors:</b> Joshua Harrison, Ehsan Toreini and Maryam Mehrnezhad <br><br>
+
+<b>Abstract:</b> With recent developments in deep learning, the
+ubiquity of microphones and the rise in online services via
+personal devices, acoustic side channel attacks present a
+greater threat to keyboards than ever. This paper presents a
+practical implementation of a state-of-the-art deep learning
+model in order to classify laptop keystrokes, using a smartphone
+integrated microphone. When trained on keystrokes
+recorded by a nearby phone, the classifier achieved an
+accuracy of 95%, the highest accuracy seen without the use
+of a language model. When trained on keystrokes recorded
+using the video-conferencing software Zoom, an accuracy of
+93% was achieved, a new best for the medium. Our results
+prove the practicality of these side channel attacks via offthe-
+shelf equipment and algorithms. We discuss a series of
+mitigation methods to protect users against these series of
+attacks.<br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-acoustic.pdf">silm2023-acoustic.pdf</a>
+
+<hr>
+<h3 id="inspector"> TimeInspector: A Static Analysis Approach for Detecting Timing Attacks</h3>
+
+<b>Authors:</b> Fatih Durmaz, Nureddin Kamadan, Melih Taha Öz, Musa Unal, Arsalan Javeed, Cemal Yilmaz and Erkay Savas <br><br>
+
+<b>Abstract:</b> We present a static analysis approach to detect
+malicious binaries that are capable of carrying out a timing
+attack. The proposed approach is based on a simple
+observation that the timing attacks typically operate by
+measuring the execution times of short sequences of instructions.
+Consequently, given a binary, we first construct
+the control flow graph of the binary and then determine
+the paths between the pairs of time readings, on which a
+suspiciously low number of instructions might be executed.
+In the presence of such a path, we mark the binary as
+potentially malicious and report all the suspicious paths
+identified. In the experiments, where a collection of benign
+and malicious binaries were used, the proposed approach
+correctly detected all the malicious binaries with an accuracy
+up to 99.5% and without any false negatives. <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-timeinspector.pdf">silm2023-timeinspector.pdf</a>
+
+<hr>
+<h3 id="spection"> Conception and implementation of a language dedicated to virtual machine introspection</h3>
+
+<b>Authors:</b> Lionel Hemmerlé, Jean-Christophe Prévotet, Guillaume Hiet, Frédéric Tronel and Pierre Wilke <br><br>
+
+<b>Abstract:</b> When using a Host-based Intrusion Detection System
+(HIDS), we need to protect it against attackers who
+manage to access a high privilege level. For that, we propose
+to use virtualization extensions: the protected system can be
+placed inside a Virtual Machine (VM) and the HIDS in
+the hypervisor. In this case, even if the VM containing the
+protected system is entirely compromised by an attacker,
+including the virtualized operating system, the IDS will still
+be functional. However, when the HIDS is located in the
+hypervisor, although it can access the VM memory and
+intercept all its communication with the hardware, it loses all
+the abstractions given by the virtualized operating system. To
+cross this semantic gap, we propose to create a new language
+that can be used by the VM to write and send programs to
+the hypervisor. Being produced by the virtual machine itself,
+we assume that these programs will have the necessary level
+of knowledge about the depths of the operating system used
+by the virtual machine. The hypervisor will process those
+programs and interpret them to detect intrusions.
+Besides, since those programs came from an untrusted
+source (the VM) and are executed in the hypervisor, we
+discuss some security constraints that must be enforced
+by our solution to ensure that it does not introduce new
+vulnerabilities in the hypervisor.
+We already implemented two kernel rootkits that can
+hide a process from the userspace in the VM, and we created
+a detection mechanism that receives from a VM a list of
+memory areas that must be monitored by the hypervisor to
+detect the two rootkits that we have implemented. <br><br>
+
+<b>Paper:</b> <a
+href="../2023-papers/silm2023-introspection.pdf">silm2023-introspection.pdf</a>
