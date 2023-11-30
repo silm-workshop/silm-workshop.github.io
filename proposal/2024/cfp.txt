@@ -51,9 +51,9 @@ that work on the security of software/hardware interfaces.
 
 ==== Important Dates
 
- - Submission: March 15, 2023 -- 11:59pm AoE
- - Author Notification: April 10, 2023
- - Camera Ready Version: May 08, 2023
+ - Submission: March 01, 2023 -- 11:59pm AoE
+ - Author Notification: April 22, 2023
+ - Camera Ready Version: May 10, 2023
  - Workshop: July 08, 2023
 
 ==== Submission and Publication
@@ -78,7 +78,7 @@ EuroS&P proceedings. Contact the Program Chairs if you do not want your
 
 Papers must be typeset in LaTeX in A4 format (not “US Letter”) using the
 IEEE conference proceeding template we provide:
-https://www.ieee-security.org/TC/EuroSP2023/eurosp2023-template.zip
+https://www.ieee-security.org/TC/EuroSP2024/eurosp2023-template.zip
 We suggest you first compile the supplied LaTeX source as is, checking that
 you obtain the same PDF as the one supplied, and then write your paper into
 the LaTeX template, replacing the boilerplate text. Please do not use other
@@ -107,7 +107,7 @@ Contact email: silm-workshop@inria.fr
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
- - Clémentine Maurice, CNRS
+ - Clementine Maurice, CNRS
  - Jan Tobias Muehlberg, ULB/KU Leuven (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
  - Kaveh Razavi, ETH Zurich
