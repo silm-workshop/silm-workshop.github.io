@@ -104,11 +104,12 @@ Contact email: silm-workshop@inria.fr
  - Chris Dalton, HP Labs
  - Lesly-Ann Daniel, KU Leuven
  - Merve Guelmez, Ericsson Research/KU Leuven (Publicity)
+ - Yuko Hara, Tokyo Institute of Technology
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
  - Vianney Lapôtre, Univ. South Brittany
  - Clementine Maurice, CNRS
- - Jan Tobias Muehlberg, ULB (Co-Chair)
+ - Jan Tobias Muehlberg, Universite Libre de Bruxelles (Co-Chair)
  - Cristofaro Mune, Raelize B.V.
  - Kaveh Razavi, ETH Zurich
  - Simon Rokicki, ENS Rennes
