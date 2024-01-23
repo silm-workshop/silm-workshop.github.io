@@ -5,6 +5,7 @@ Chris Dalton <cid@hp.com>
 Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
 Merve Guelmez <merve.gulmez@ericsson.com>
 Karine Heydemann <karine.heydemann@lip6.fr>
+Kevin Kee-Ming Cheang <kcheang@berkeley.edu>
 Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
 Clémentine Maurice <clementine.maurice@inria.fr>
 Cristofaro Mune <cristofaro@raelize.com>

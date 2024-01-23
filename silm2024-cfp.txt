@@ -107,6 +107,7 @@ Contact email: silm-workshop@inria.fr
  - Yuko Hara, Tokyo Institute of Technology
  - Karine Heydemann, LIP6
  - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
+ - Kevin Kee-Ming Cheang, University of California, Berkeley
  - Vianney Lapôtre, Univ. South Brittany
  - Clementine Maurice, CNRS
  - Jan Tobias Muehlberg, Universite Libre de Bruxelles (Co-Chair)
@@ -117,5 +118,5 @@ Contact email: silm-workshop@inria.fr
  - Volker Stolz, HVL
  - Marcus Voelp, Uni Luxembourgh
  - Pierre Wilke, CentraleSupélec/Inria
- - Yuval Yarom, University of Adelaide
+ - Yuval Yarom, Ruhr University Bochum
 
