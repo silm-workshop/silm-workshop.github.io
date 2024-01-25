@@ -114,6 +114,7 @@ Contact email: silm-workshop@inria.fr
  - Cristofaro Mune, Raelize B.V.
  - Kaveh Razavi, ETH Zurich
  - Simon Rokicki, ENS Rennes
+ - Gururaj Saileshwar, University of Toronto
  - Shweta Shinde, ETH Zurich
  - Volker Stolz, HVL
  - Marcus Voelp, Uni Luxembourgh
