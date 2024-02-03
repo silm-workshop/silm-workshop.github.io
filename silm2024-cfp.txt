@@ -119,5 +119,4 @@ Contact email: silm-workshop@inria.fr
  - Volker Stolz, HVL
  - Marcus Voelp, Uni Luxembourgh
  - Pierre Wilke, CentraleSupélec/Inria
- - Yuval Yarom, Ruhr University Bochum
 

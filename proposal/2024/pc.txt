@@ -4,6 +4,7 @@ Pascal Cotret <pascal.cotret@gmail.com>
 Chris Dalton <cid@hp.com>
 Lesly-Ann Daniel <lesly-ann.daniel@kuleuven.be>
 Merve Guelmez <merve.gulmez@ericsson.com>
+Yuko Hara <hara@cad.ict.e.titech.ac.jp>
 Karine Heydemann <karine.heydemann@lip6.fr>
 Kevin Kee-Ming Cheang <kcheang@berkeley.edu>
 Vianney Lapôtre <vianney.lapotre@univ-ubs.fr>
@@ -16,8 +17,6 @@ Shweta Shinde <shweta.shivajishinde@inf.ethz.ch>
 Volker Stolz <Volker.Stolz@hvl.no>
 Marcus Voelp <marcus.voelp@uni.lu>
 Pierre Wilke <pierre.wilke@centralesupelec.fr>
-Yuval Yarom <yuval.yarom@rub.de>
-Yuko Hara <hara@cad.ict.e.titech.ac.jp>
 
 # --- old ---
 
@@ -26,4 +25,5 @@ Damien Couroussé <damien.courousse@cea.fr>
 Lucas Davi <lucas.davi@uni-due.de>
 Ronan Lashermes <ronan.lashermes@inria.fr>
 Erven Rohou <erven.rohou@inria.fr>
+Yuval Yarom <yuval.yarom@rub.de>
 
