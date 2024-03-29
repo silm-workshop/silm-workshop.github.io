@@ -69,12 +69,13 @@ There are two categories of submissions:
     hypothesis, evaluation strategy and potential impact)
 
 All papers must be written in English and describe original work that has
-not been published or submitted elsewhere. The submission category (regular
-paper, short paper, special theme) should be clearly indicated. All
-submissions will be fully reviewed by members of the Program Committee.
-Papers will appear in IEEE Xplore in a companion volume to the regular
-EuroS&P proceedings. Contact the Program Chairs if you do not want your
-*short paper* to appear in the proceedings.
+not been published or submitted elsewhere. Our reviewing process is
+double-blind and submissions must be anonymous and refer to previous work
+in the third person. The submission category (regular paper, short paper)
+should be clearly indicated. All submissions will be fully reviewed by
+members of the Program Committee.  Papers will appear in IEEE Xplore in a
+companion volume to the regular EuroS&P proceedings. Contact the Program
+Chairs if you do not want your *short paper* to appear in the proceedings.
 
 Papers must be typeset in LaTeX in A4 format (not “US Letter”) using the
 IEEE conference proceeding template we provide:
