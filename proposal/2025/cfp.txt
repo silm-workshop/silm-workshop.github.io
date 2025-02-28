@@ -1,0 +1,115 @@
+
+******************************************************************************
+                          Call for Papers
+
+        SILM Workshop on the Security of Software/Hardware Interfaces
+               Thursday, September 25 2025, Toulouse (France)
+                    https://silm-workshop.github.io/
+
+ Co-located with ESORICS 2025: https://esorics2025.sciencesconf.org/
+******************************************************************************
+
+Combining software and hardware aspects to consider new software attacks 
+is becoming increasingly important. For example, hardware vulnerabilities
+ such as Spectre or Meltdown can be exploited purely by software attacks. 
+Such attacks can be executed remotely and do not require physical access 
+to the targeted hardware platform. On the other hand, hardware features 
+can be used to better detect and respond to traditional software attacks, 
+such as memory corruption. Therefore, it is necessary to study the security 
+of software/hardware interfaces, both in terms of attacks and defences.
+
+The SILM workshop aims to share experiences, tools, and
+methodologies to handle security in software/hardware interfaces. On the
+one hand, we need to assess better the security guarantees provided by
+existing hardware architectures against software attacks, especially
+attacks against micro-architecture. This can be achieved by identifying new
+vulnerabilities using reverse engineering, fuzzing, or other attack
+approaches. On the other hand, we also need to propose new architectures
+offering better resilience against software attacks. These architectures
+should rely on hardware-based security mechanisms to protect the software
+stack. One of the challenges is to formally specify and verify the security
+guarantees offered by such architectures.
+
+The goal of this 6th edition of the SILM workshop is to provide a forum
+for researchers and practitioners from academia, industry, and government
+that work on the security of software/hardware interfaces.
+
+==== Topics of interest include, but are not limited to the following
+
+ * Hardware reverse engineering
+ * Microcode security analyses
+ * Software side-channel attacks
+ * Software attacks against micro-architecture
+ * Software-activated fault attacks
+ * Hardware-based security mechanisms
+ * Software counter-measures against hardware vulnerabilities
+ * Formal methods applied to the security of software/hardware interfaces
+ * Hardware enclaves
+ * Hardware trace mechanisms for security
+ * OS and VM introspection
+
+==== Important Dates
+
+ - Submission: March 08, 2024 -- 11:59pm AoE May 21, 2025
+ - Author Notification: April 30, 2024 June 15, 2025
+ - Camera Ready Version: May 14, 2024 June 27, 2025
+ - Workshop: July 12, 2024 September 25, 2025
+
+==== Submission and Publication
+
+There are two categories of submissions:
+
+ 1. Regular papers describing fully developed work and complete results (20
+    pages, references included, LNCS format)
+
+ 2. Short papers, position papers, industry experience reports, work-in-
+    progress submissions and ideas (10 pages, references included, IEEE format;
+    work-in-progress and idea submissions should clearly outline the research
+    hypothesis, evaluation strategy and potential impact)
+
+All papers must be written in English and describe original work that has
+not been published or submitted elsewhere. The submission category (regular
+paper, short paper, special theme) should be clearly indicated. Members of the 
+The Program Committee will fully review all submissions.
+Papers will be published by Springer in the Lecture Notes in Computer Science
+(LNCS) series. Contact the Program Chairs if you do not want your
+*short paper* to appear in the proceedings.
+
+Papers must be typeset in LaTeX using the LNCS template available at :
+https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines. 
+Failure to adhere to the page limit and formatting
+requirements can be grounds for rejection.
+
+For accepted papers, at least one author must attend the workshop.
+
+==== Program Chairs
+
+ - Guillaume Hiet, IRISA, CentraleSupelec/Inria, France
+ - Jan Tobias Muehlberg, ULB/KU Leuven, Belgium
+
+Contact email: silm-workshop@inria.fr
+
+=== Publicity
+
+ - Merve Guelmez, Ericsson Research/KU Leuven, Sweden/Belgium
+
+==== Program Committee
+
+ - Pascal Cotret, ENSTA Bretagne
+ - Chris Dalton, HP Labs
+ - Lesly-Ann Daniel, KU Leuven
+ - Merve Guelmez, Ericsson Research/KU Leuven (Publicity)
+ - Karine Heydemann, LIP6
+ - Guillaume Hiet, CentraleSupélec/Inria (Co-Chair)
+ - Vianney Lapôtre, Univ. South Brittany
+ - Clementine Maurice, CNRS
+ - Jan Tobias Muehlberg, ULB/KU Leuven (Co-Chair)
+ - Cristofaro Mune, Raelize B.V.
+ - Kaveh Razavi, ETH Zurich
+ - Simon Rokicki, ENS Rennes
+ - Shweta Shinde, ETH Zurich
+ - Volker Stolz, HVL
+ - Marcus Voelp, Uni Luxembourgh
+ - Pierre Wilke, CentraleSupélec/Inria
+ - Yuval Yarom, University of Adelaide
+
