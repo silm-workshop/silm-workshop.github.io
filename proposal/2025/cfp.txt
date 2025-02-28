@@ -2,7 +2,7 @@
 ******************************************************************************
                           Call for Papers
 
-        SILM Workshop on the Security of Software/Hardware Interfaces
+            H3S Workshop on Hardware-Supported Software Security
                Thursday, September 25 2025, Toulouse (France)
                     https://silm-workshop.github.io/
 
@@ -18,8 +18,8 @@ can be used to better detect and respond to traditional software attacks,
 such as memory corruption. Therefore, it is necessary to study the security 
 of software/hardware interfaces, both in terms of attacks and defences.
 
-The SILM workshop aims to share experiences, tools, and
-methodologies to handle security in software/hardware interfaces. On the
+The H3S workshop aims to share experiences, tools, and methodologies to handle 
+security in software/hardware interfaces. On the
 one hand, we need to assess better the security guarantees provided by
 existing hardware architectures against software attacks, especially
 attacks against micro-architecture. This can be achieved by identifying new
